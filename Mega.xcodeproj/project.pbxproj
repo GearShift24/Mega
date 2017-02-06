@@ -6,6 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		67F011761E48D5E300802D11 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67F011741E48D5E300802D11 /* IntNode.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		67F011641E48D40B00802D11 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		67F011661E48D40B00802D11 /* Mega */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mega; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F011741E48D5E300802D11 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Mega/Model/IntNode.cpp; sourceTree = "<group>"; };
+		67F011751E48D5E300802D11 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Mega/Model/IntNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +42,7 @@
 		67F0115D1E48D40B00802D11 = {
 			isa = PBXGroup;
 			children = (
-				67F011721E48D56E00802D11 /* New Group */,
+				67F011731E48D58D00802D11 /* Mega */,
 				67F011671E48D40B00802D11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,35 +55,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67F011681E48D40B00802D11 /* Mega */ = {
+		67F011731E48D58D00802D11 /* Mega */ = {
 			isa = PBXGroup;
 			children = (
+				67F011771E48D5EC00802D11 /* Model */,
 			);
-			path = Mega;
+			name = Mega;
 			sourceTree = "<group>";
 		};
-		67F011701E48D56500802D11 /* New Group */ = {
+		67F011771E48D5EC00802D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				67F011681E48D40B00802D11 /* Mega */,
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
-		67F011711E48D56A00802D11 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				67F011701E48D56500802D11 /* New Group */,
+				67F011741E48D5E300802D11 /* IntNode.cpp */,
+				67F011751E48D5E300802D11 /* IntNode.hpp */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		67F011721E48D56E00802D11 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				67F011711E48D56A00802D11 /* Model */,
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F011761E48D5E300802D11 /* IntNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
