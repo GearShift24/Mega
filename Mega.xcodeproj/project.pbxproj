@@ -36,7 +36,7 @@
 		67F0115D1E48D40B00802D11 = {
 			isa = PBXGroup;
 			children = (
-				67F011681E48D40B00802D11 /* Mega */,
+				67F011721E48D56E00802D11 /* New Group */,
 				67F011671E48D40B00802D11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +54,30 @@
 			children = (
 			);
 			path = Mega;
+			sourceTree = "<group>";
+		};
+		67F011701E48D56500802D11 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				67F011681E48D40B00802D11 /* Mega */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		67F011711E48D56A00802D11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F011701E48D56500802D11 /* New Group */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		67F011721E48D56E00802D11 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				67F011711E48D56A00802D11 /* Model */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +263,7 @@
 				67F0116F1E48D40B00802D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
