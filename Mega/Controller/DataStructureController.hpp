@@ -14,7 +14,7 @@ private:
 	void testIntArray();
 
 public:
-	DataStructureContorller();
+	DataStructureController();
 	void start();
 
 };

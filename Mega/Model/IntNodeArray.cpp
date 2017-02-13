@@ -15,7 +15,8 @@ IntNodeArray::IntNodeArray(int size)
 	this->size = size;
 	this->front = new IntNode();
 
-	for(int index = 0; index < size; index++)
+    //starting at 1 bc head already points to a valid IntNode
+	for(int index = 1; index < size; index++)
 	{
 		IntNode * current = new IntNode();
 		current->setNodePointer(front);
@@ -26,8 +27,11 @@ IntNodeArray::IntNodeArray(int size)
 int IntNodeArray :: getFromIndex(int index)
 {
 	assert(index >= 0 && index < size);
+    
+    
 	int value = 0;
 
+    
 	IntNode * current = front;
 
 	for(int position = 0; position < index; position ++)

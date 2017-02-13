@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67EFB6BD1E51FCEE004183E4 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */; };
+		67EFB6BE1E51FCEE004183E4 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */; };
+		67EFB6C21E51FD21004183E4 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */; };
 		67F011761E48D5E300802D11 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67F011741E48D5E300802D11 /* IntNode.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Mega/Controller/DataStructureController.cpp; sourceTree = "<group>"; };
+		67EFB6BB1E51FCEE004183E4 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Mega/Controller/DataStructureController.hpp; sourceTree = "<group>"; };
+		67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeRunner.cpp; path = Mega/Controller/NodeRunner.cpp; sourceTree = "<group>"; };
+		67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Mega/Model/IntNodeArray.cpp; sourceTree = "<group>"; };
+		67EFB6C11E51FD21004183E4 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Mega/Model/IntNodeArray.hpp; sourceTree = "<group>"; };
+		67EFB6C31E5208D9004183E4 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Mega/Model/Node.hpp; sourceTree = "<group>"; };
 		67F011661E48D40B00802D11 /* Mega */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mega; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F011741E48D5E300802D11 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Mega/Model/IntNode.cpp; sourceTree = "<group>"; };
 		67F011751E48D5E300802D11 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Mega/Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -39,11 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67EFB6BF1E51FCF5004183E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67EFB6BB1E51FCEE004183E4 /* DataStructureController.hpp */,
+				67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */,
+				67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		67F0115D1E48D40B00802D11 = {
 			isa = PBXGroup;
 			children = (
 				67F011731E48D58D00802D11 /* Mega */,
 				67F011671E48D40B00802D11 /* Products */,
+				67EFB6BF1E51FCF5004183E4 /* Controller */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +88,9 @@
 			children = (
 				67F011741E48D5E300802D11 /* IntNode.cpp */,
 				67F011751E48D5E300802D11 /* IntNode.hpp */,
+				67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */,
+				67EFB6C11E51FD21004183E4 /* IntNodeArray.hpp */,
+				67EFB6C31E5208D9004183E4 /* Node.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -130,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F011761E48D5E300802D11 /* IntNode.cpp in Sources */,
+				67EFB6C21E51FD21004183E4 /* IntNodeArray.cpp in Sources */,
+				67EFB6BD1E51FCEE004183E4 /* DataStructureController.cpp in Sources */,
+				67EFB6BE1E51FCEE004183E4 /* NodeRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,14 +5,12 @@
  *      Author: joey
  */
 
-#include "deleteme.h"
 
-NodeRunner::NodeRunner() {
-	// TODO Auto-generated constructor stub
+#include "DataStructureController.hpp"
 
+int main()
+{
+    DataStructureController * app = new DataStructureController();
+    app->start();
+    return 0;
 }
-
-NodeRunner::~NodeRunner() {
-	// TODO Auto-generated destructor stub
-}
-

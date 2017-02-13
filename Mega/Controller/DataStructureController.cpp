@@ -7,7 +7,7 @@
 
 #include "DataStructureController.hpp"
 #include <iostream>
-#include ".../Model/IntNodeArray.hpp"
+#include "IntNodeArray.hpp"
 using namespace std;
 
 DataStructureController::DataStructureController()
@@ -26,11 +26,11 @@ void DataStructureController :: testIntArray()
 {
 	cout << "testing the array" << endl;
 
-	IntNodeArray temp = IntNodeArray(0);
+	IntNodeArray temp = IntNodeArray(3);
 
 	for (int index = 0; index < 3; index++)
 	{
-		cout << temp.getFromIndex(index) << "is at spot " << index << endl;
+		cout << temp.getFromIndex(index) << "  is at spot " << index << endl;
 	}
 
 	cout << "Testing IntNodeArray input" << endl;
