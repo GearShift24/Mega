@@ -24,10 +24,11 @@ public:
     //constructors
     IntNode();
     IntNode(int value);
-    IntNode(int value, IntNode * nextNode);
     /*
-     Creates an intnode with specified value and refrence to the next node.
-     */
+      Creates an intnode with specified value and refrence to the next node.
+      */
+    IntNode(int value, IntNode * nextNode);
+
     
     //methods
     int getNodeData();
