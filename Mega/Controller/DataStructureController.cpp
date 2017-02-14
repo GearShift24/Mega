@@ -12,15 +12,24 @@ using namespace std;
 
 DataStructureController::DataStructureController()
 {
-
+    wordNode = Node<string>("derpy");
+    numberNode = Node<int>();
 }
 
 void DataStructureController :: start()
 {
-	cout << "Switching to the IntNodeArray Testing" << endl;
-	testIntArray();
-	cout << "finished testing " << endl;
+	cout << "Here is my string node" << endl;
+    cout << wordNode.getNodeData() << endl;
+    cout << "Here is an uninit int node" << endl;
+	cout << numberNode.getNodeData() << endl;
 }
+
+
+
+
+
+
+
 
 void DataStructureController :: testIntArray()
 {
