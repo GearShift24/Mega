@@ -8,6 +8,7 @@
 #include "DataStructureController.hpp"
 #include <iostream>
 #include "IntNodeArray.hpp"
+
 using namespace std;
 
 DataStructureController::DataStructureController()

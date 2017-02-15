@@ -8,7 +8,7 @@
 #ifndef DataStructureController_hpp
 #define DataStructureController_hpp
 
-
+#include "../Model/Array.h"
 #include "../Model/Node.hpp"
 #include <string>
 using namespace std;

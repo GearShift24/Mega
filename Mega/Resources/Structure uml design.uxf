@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
+      <x>152</x>
       <y>104</y>
       <w>312</w>
       <h>168</h>
@@ -29,7 +29,7 @@ bg=#9993494</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>40</x>
+      <x>24</x>
       <y>24</y>
       <w>152</w>
       <h>40</h>
@@ -42,7 +42,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>472</x>
+      <x>456</x>
       <y>176</y>
       <w>208</w>
       <h>32</h>
@@ -54,7 +54,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>664</x>
+      <x>648</x>
       <y>128</y>
       <w>256</w>
       <h>120</h>
@@ -74,7 +74,7 @@ bg=#8993334</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>144</x>
+      <x>128</x>
       <y>304</y>
       <w>344</w>
       <h>232</h>
@@ -105,7 +105,7 @@ bg=#8546</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
+      <x>600</x>
       <y>304</y>
       <w>288</w>
       <h>264</h>
@@ -127,13 +127,39 @@ Methods/Accessors:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
+      <x>592</x>
       <y>392</y>
-      <w>152</w>
+      <w>360</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=1..n</panel_attributes>
-    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;430.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>128</x>
+      <y>80</y>
+      <w>792</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Sample Data Structure
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>104</x>
+      <y>288</y>
+      <w>832</w>
+      <h>344</h>
+    </coordinates>
+    <panel_attributes>Generic Data Structure
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
