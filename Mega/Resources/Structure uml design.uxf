@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>168</x>
-      <y>96</y>
+      <y>104</y>
       <w>312</w>
       <h>168</h>
     </coordinates>
@@ -30,7 +30,7 @@ bg=#9993494</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>40</x>
-      <y>16</y>
+      <y>24</y>
       <w>152</w>
       <h>40</h>
     </coordinates>
@@ -43,20 +43,20 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>472</x>
-      <y>168</y>
+      <y>176</y>
       <w>208</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1..2</panel_attributes>
+m2=1..n</panel_attributes>
     <additional_attributes>240.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>664</x>
-      <y>120</y>
-      <w>200</w>
+      <y>128</y>
+      <w>256</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>IntNodeArray
@@ -64,7 +64,7 @@ m2=1..2</panel_attributes>
 - size : int
 - front : IntNode *
 --
-+IintNodeArray(int size) : constructor
++IntNodeArray(int size) : constructor
 +setAtIndex(int index, int value) : void
 +getFromIndex(int index) : int
 +getSize() : int
@@ -74,8 +74,8 @@ bg=#8993334</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>536</x>
-      <y>352</y>
+      <x>144</x>
+      <y>304</y>
       <w>344</w>
       <h>232</h>
     </coordinates>
@@ -101,5 +101,39 @@ Accessors
 
 bg=#8546</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>304</y>
+      <w>288</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>Array&lt;Type&gt;
+--
+-size : int 
+-front : Node&lt;Type&gt; *
+--
+Constructors:
++ Array&lt;Type&gt;(int size) : Constructor
+
+Methods/Accessors:
++getSize() : int
++getFromIndex(int index) : Type
++setAtTindex(int index, Type value) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>392</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

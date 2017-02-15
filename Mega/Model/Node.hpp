@@ -73,11 +73,6 @@ Node<Type> *Node<Type> :: getNodePointer()
 
 
 
-
-
-
-
-
 #endif /* Node_hpp */
 
 
