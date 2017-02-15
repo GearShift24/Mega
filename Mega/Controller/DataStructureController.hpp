@@ -18,15 +18,11 @@ class DataStructureController
 {
 private:
     
-    
-    
-	
-    
     Node<int> numberNode;
     Node<string> wordNode;
     Array<int> numberArray;
     
-    void textIntArray();
+    void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();
 

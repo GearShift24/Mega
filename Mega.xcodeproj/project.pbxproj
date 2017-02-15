@@ -52,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		674254121E54B2AB009E9002 /* Type Data Sample */ = {
+			isa = PBXGroup;
+			children = (
+				67F011741E48D5E300802D11 /* IntNode.cpp */,
+				67F011751E48D5E300802D11 /* IntNode.hpp */,
+				67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */,
+				67EFB6C11E51FD21004183E4 /* IntNodeArray.hpp */,
+			);
+			name = "Type Data Sample";
+			sourceTree = "<group>";
+		};
 		67EFB6BF1E51FCF5004183E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +101,9 @@
 		67F011771E48D5EC00802D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				674254121E54B2AB009E9002 /* Type Data Sample */,
 				6742540F1E54B231009E9002 /* Timer.cpp */,
 				674254101E54B231009E9002 /* Timer.hpp */,
-				67F011741E48D5E300802D11 /* IntNode.cpp */,
-				67F011751E48D5E300802D11 /* IntNode.hpp */,
-				67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */,
-				67EFB6C11E51FD21004183E4 /* IntNodeArray.hpp */,
 				67EFB6C31E5208D9004183E4 /* Node.hpp */,
 				6742540E1E54AAB2009E9002 /* Array.h */,
 			);

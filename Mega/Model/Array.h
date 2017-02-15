@@ -20,6 +20,7 @@ private:
     
 public:
     //constructor
+    Array<Type>();
     Array<Type>(int size);
     //methods
     int getSize();
@@ -41,6 +42,14 @@ Array<Type> :: Array(int size)
         currentNode->setNodePointer(front);
         front = currentNode;
     }
+}
+
+//DO NOT USE
+//IMPLEMENTED FOR COMPOLATION
+template <class Type>
+Array<Type> :: Array()
+{
+    
 }
 
 //methods / getters and setterz

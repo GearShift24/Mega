@@ -75,7 +75,7 @@ bg=#8993334</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>128</x>
-      <y>304</y>
+      <y>320</y>
       <w>344</w>
       <h>232</h>
     </coordinates>
@@ -105,8 +105,8 @@ bg=#8546</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>304</y>
+      <x>584</x>
+      <y>312</y>
       <w>288</w>
       <h>264</h>
     </coordinates>
@@ -117,24 +117,26 @@ bg=#8546</panel_attributes>
 --
 Constructors:
 + Array&lt;Type&gt;(int size) : Constructor
++Array&lt;Type&gt;();
 
 Methods/Accessors:
 +getSize() : int
 +getFromIndex(int index) : Type
-+setAtTindex(int index, Type value) : void</panel_attributes>
++setAtTindex(int index, Type value) : void
+bg=#4252545</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
-      <y>392</y>
-      <w>360</w>
+      <x>464</x>
+      <y>408</y>
+      <w>136</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;430.0;10.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
