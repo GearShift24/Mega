@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674254111E54B231009E9002 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6742540F1E54B231009E9002 /* Timer.cpp */; };
 		67EFB6BD1E51FCEE004183E4 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */; };
 		67EFB6BE1E51FCEE004183E4 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */; };
 		67EFB6C21E51FD21004183E4 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */; };
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		6742540E1E54AAB2009E9002 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Mega/Model/Array.h; sourceTree = "<group>"; };
+		6742540F1E54B231009E9002 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Mega/Model/Timer.cpp; sourceTree = "<group>"; };
+		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
 		67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Mega/Controller/DataStructureController.cpp; sourceTree = "<group>"; };
 		67EFB6BB1E51FCEE004183E4 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Mega/Controller/DataStructureController.hpp; sourceTree = "<group>"; };
 		67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeRunner.cpp; path = Mega/Controller/NodeRunner.cpp; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 		67F011771E48D5EC00802D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6742540F1E54B231009E9002 /* Timer.cpp */,
+				674254101E54B231009E9002 /* Timer.hpp */,
 				67F011741E48D5E300802D11 /* IntNode.cpp */,
 				67F011751E48D5E300802D11 /* IntNode.hpp */,
 				67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */,
@@ -157,6 +162,7 @@
 				67F011761E48D5E300802D11 /* IntNode.cpp in Sources */,
 				67EFB6C21E51FD21004183E4 /* IntNodeArray.cpp in Sources */,
 				67EFB6BD1E51FCEE004183E4 /* DataStructureController.cpp in Sources */,
+				674254111E54B231009E9002 /* Timer.cpp in Sources */,
 				67EFB6BE1E51FCEE004183E4 /* NodeRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

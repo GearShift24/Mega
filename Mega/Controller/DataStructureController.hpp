@@ -17,12 +17,18 @@ using namespace std;
 class DataStructureController
 {
 private:
-	void testIntArray();
+    
+    
+    
+	
     
     Node<int> numberNode;
     Node<string> wordNode;
+    Array<int> numberArray;
+    
     void textIntArray();
     void testNodeTypes();
+    void testArrayTemplate();
 
 public:
 	DataStructureController();
