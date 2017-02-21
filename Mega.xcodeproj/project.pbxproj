@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		670665661E5CA3D900A9CC9C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Mega/Model/List.hpp; sourceTree = "<group>"; };
 		6742540E1E54AAB2009E9002 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Mega/Model/Array.hpp; sourceTree = "<group>"; };
 		6742540F1E54B231009E9002 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Mega/Model/Timer.cpp; sourceTree = "<group>"; };
 		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
@@ -55,8 +56,8 @@
 		674254121E54B2AB009E9002 /* Type Data Sample */ = {
 			isa = PBXGroup;
 			children = (
+				6742540F1E54B231009E9002 /* Timer.cpp */,
 				67F011741E48D5E300802D11 /* IntNode.cpp */,
-				67F011751E48D5E300802D11 /* IntNode.hpp */,
 				67EFB6C01E51FD21004183E4 /* IntNodeArray.cpp */,
 				67EFB6C11E51FD21004183E4 /* IntNodeArray.hpp */,
 			);
@@ -102,10 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				674254121E54B2AB009E9002 /* Type Data Sample */,
-				6742540F1E54B231009E9002 /* Timer.cpp */,
 				674254101E54B231009E9002 /* Timer.hpp */,
+				67F011751E48D5E300802D11 /* IntNode.hpp */,
 				67EFB6C31E5208D9004183E4 /* Node.hpp */,
 				6742540E1E54AAB2009E9002 /* Array.hpp */,
+				670665661E5CA3D900A9CC9C /* List.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
