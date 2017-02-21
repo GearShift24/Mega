@@ -27,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6742540E1E54AAB2009E9002 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Mega/Model/Array.h; sourceTree = "<group>"; };
+		6742540E1E54AAB2009E9002 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Mega/Model/Array.hpp; sourceTree = "<group>"; };
 		6742540F1E54B231009E9002 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Mega/Model/Timer.cpp; sourceTree = "<group>"; };
 		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
 		67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Mega/Controller/DataStructureController.cpp; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				6742540F1E54B231009E9002 /* Timer.cpp */,
 				674254101E54B231009E9002 /* Timer.hpp */,
 				67EFB6C31E5208D9004183E4 /* Node.hpp */,
-				6742540E1E54AAB2009E9002 /* Array.h */,
+				6742540E1E54AAB2009E9002 /* Array.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";

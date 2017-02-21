@@ -8,7 +8,7 @@
 #ifndef DataStructureController_hpp
 #define DataStructureController_hpp
 
-#include "../Model/Array.h"
+#include "../Model/Array.hpp"
 #include "../Model/Node.hpp"
 #include <string>
 using namespace std;
@@ -25,6 +25,7 @@ private:
     void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();
+    void testAdvancedFeatures();
 
 public:
 	DataStructureController();

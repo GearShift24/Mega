@@ -43,14 +43,33 @@ void DataStructureController :: testArrayTemplate()
 
 void DataStructureController :: start()
 {
-    testArrayTemplate();
-//	cout << "Here is my string node" << endl;
-//    cout << wordNode.getNodeData() << endl;
-//    cout << "Here is an uninit int node" << endl;
-//	cout << numberNode.getNodeData() << endl;
+    cout << "going to test the Array Template" << endl;
+    testAdvancedFeatures();
+    cout << "finished template testing" << endl;
     
 }
 
+
+
+void DataStructureController :: testAdvancedFeatures()
+{
+    int showDestructor = 0;
+    
+    if(showDestructor < 1)
+    {
+        Array<string> words = Array<string>(5);
+        cout << "There should be messages destructor next" <<endl;
+    }
+    Array<string> words  = Array<string>(4);
+    words.setAtIndex(0, "at zero");
+    words.setAtIndex(3, "in the last spot");
+    Array<string> copiedWords = Array<string>(words);
+    
+    cout << "these shoould match:" << endl;
+    cout << words.getFromIndex(0) << " should be the same as " << copiedWords.getFromIndex(0) << endl;
+    
+    copiedWords.setAtIndex(3, "changed the contents of the copied Array");
+}
 
 
 

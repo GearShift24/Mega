@@ -6,12 +6,13 @@
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 
-#ifndef Array_h
-#define Array_h
+#ifndef Array_hpp
+#define Array_hpp
 
 #include <iostream>
 #include <assert.h>
 #include "Node.hpp"
+
 
 using namespace std;
 
@@ -31,7 +32,7 @@ public:
     //copy constructor
     Array<Type>(const Array<Type> & toBeCopied);
     // assignment operator overload
-    void operator = (const Array<Type> & toBeAssigned);
+   // void operator = (const Array<Type> & toBeAssigned);
     //methods
     int getSize() const;
     Node<Type> * getFront() const;
@@ -164,4 +165,4 @@ Node<Type>* Array<Type> :: getFront() const
 
 
 
-#endif /* Array_h */
+#endif /* Array_hpp */
