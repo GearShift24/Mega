@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>152</x>
-      <y>104</y>
+      <x>128</x>
+      <y>144</y>
       <w>312</w>
       <h>168</h>
     </coordinates>
@@ -29,8 +29,8 @@ bg=#9993494</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>24</x>
-      <y>24</y>
+      <x>0</x>
+      <y>64</y>
       <w>152</w>
       <h>40</h>
     </coordinates>
@@ -42,8 +42,8 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>176</y>
+      <x>432</x>
+      <y>216</y>
       <w>208</w>
       <h>32</h>
     </coordinates>
@@ -54,8 +54,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>648</x>
-      <y>128</y>
+      <x>624</x>
+      <y>168</y>
       <w>256</w>
       <h>120</h>
     </coordinates>
@@ -74,8 +74,8 @@ bg=#8993334</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>128</x>
-      <y>320</y>
+      <x>104</x>
+      <y>360</y>
       <w>344</w>
       <h>232</h>
     </coordinates>
@@ -105,9 +105,9 @@ bg=#8546</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>584</x>
-      <y>312</y>
-      <w>288</w>
+      <x>496</x>
+      <y>352</y>
+      <w>392</w>
       <h>264</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
@@ -119,8 +119,14 @@ Constructors:
 + Array&lt;Type&gt;(int size) : Constructor
 +Array&lt;Type&gt;();
 
+destructor:
++ ~Array&lt;Type&gt;() : destructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied : copyConstructor
+
 Methods/Accessors:
-+getSize() : int
++getSize() const : int
+-getFront() const : int
+
 +getFromIndex(int index) : Type
 +setAtTindex(int index, Type value) : void
 bg=#4252545</panel_attributes>
@@ -129,20 +135,20 @@ bg=#4252545</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>464</x>
-      <y>408</y>
-      <w>136</w>
+      <x>440</x>
+      <y>448</y>
+      <w>72</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=1..n</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>128</x>
-      <y>80</y>
+      <x>104</x>
+      <y>120</y>
       <w>792</w>
       <h>192</h>
     </coordinates>
@@ -154,8 +160,8 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>104</x>
-      <y>288</y>
+      <x>80</x>
+      <y>328</y>
       <w>832</w>
       <h>344</h>
     </coordinates>

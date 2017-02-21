@@ -26,7 +26,6 @@ void DataStructureController :: testArrayTemplate()
     
     Timer arrayTimer;
     arrayTimer.startTimer();
-    int test [9];
     arrayTimer.stopTimer();
     arrayTimer.displayTimerInformation();
     arrayTimer.resetTimer();
