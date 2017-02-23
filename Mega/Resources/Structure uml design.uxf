@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>128</x>
-      <y>80</y>
+      <y>152</y>
       <w>312</w>
       <h>168</h>
     </coordinates>
@@ -30,7 +30,7 @@ bg=#9993494</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>0</x>
-      <y>0</y>
+      <y>72</y>
       <w>152</w>
       <h>40</h>
     </coordinates>
@@ -43,7 +43,7 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>432</x>
-      <y>152</y>
+      <y>224</y>
       <w>208</w>
       <h>32</h>
     </coordinates>
@@ -55,7 +55,7 @@ m2=1..n</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>624</x>
-      <y>104</y>
+      <y>176</y>
       <w>256</w>
       <h>120</h>
     </coordinates>
@@ -75,7 +75,7 @@ bg=#8993334</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>104</x>
-      <y>296</y>
+      <y>368</y>
       <w>344</w>
       <h>232</h>
     </coordinates>
@@ -106,7 +106,7 @@ bg=#8546</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>496</x>
-      <y>288</y>
+      <y>360</y>
       <w>392</w>
       <h>264</h>
     </coordinates>
@@ -136,7 +136,7 @@ bg=#4252545</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>384</y>
+      <y>456</y>
       <w>72</w>
       <h>32</h>
     </coordinates>
@@ -148,7 +148,7 @@ m2=1..n</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>104</x>
-      <y>56</y>
+      <y>128</y>
       <w>792</w>
       <h>192</h>
     </coordinates>
@@ -161,7 +161,7 @@ bg=orange</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>80</x>
-      <y>264</y>
+      <y>336</y>
       <w>832</w>
       <h>344</h>
     </coordinates>
@@ -174,7 +174,7 @@ bg=orange</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>544</x>
-      <y>624</y>
+      <y>696</y>
       <w>464</w>
       <h>240</h>
     </coordinates>
@@ -182,6 +182,7 @@ bg=orange</panel_attributes>
 --
 - size : int
 - front : Node&lt;Type&gt; *
+- end : Node&lt;Type&gt; *
 --
 + List&lt;Type&gt;() : constructor
 + List&lt;Type&gt;(const List&lt;Type&gt; &amp; source) : copy constructor
@@ -194,19 +195,36 @@ bg=orange</panel_attributes>
 + getFromIndex(int index) : Type
 + contains(Type data) : bool
 + getSize() const : int
-+ getFront() const : Node&lt;Type&gt; *</panel_attributes>
++ getFront() const : Node&lt;Type&gt; *
++ getEnd() const : Node&lt;Type&gt; *</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>400</x>
-      <y>520</y>
+      <y>592</y>
       <w>240</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
     <additional_attributes>280.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>8</x>
+      <y>0</y>
+      <w>120</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Class 
+--
+Data members
+--
+Constructors
+Method</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
