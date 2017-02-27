@@ -15,7 +15,7 @@
 
 
 template <class Type>
-class Array
+class List
 {
 private:
     Node<Type> * front;
@@ -26,7 +26,7 @@ public:
     //constructors
     List<Type>();
     List<Type>(const List<Type> & source);
-    ~List<Type>();
+//    ~List<Type>();
     
     //methods
     
@@ -34,7 +34,8 @@ public:
     Node<Type> * getFront() const;
     Node<Type> * getEnd() const;
     
-    
+    void addFront(Type value);
+    void addEnd(Type value);
     void addAtIndex(int index, Type value);
     void add(Type value);
     Type remove(int index);
@@ -80,7 +81,7 @@ void List<Type> :: addFront(Type value)
     if(size ==0)
        {
            //gives you the way to get to the front here, then you add l8r g8r
-           Node<Type> * first = new Node(value);
+           Node<Type> * first = new Node<Type>(value);
            this->front = first;
            this->end = first;
        }
@@ -107,7 +108,7 @@ void List<Type> :: addEnd(Type data)
     Node<Type> * added = new Node<Type>(data);
     if(size == 0)
     {
-        this-front = added;
+        this->front = added;
         this->end = added;
     }
     
@@ -136,11 +137,11 @@ void List<Type> :: addAtIndex(int index, Type value)
     }
     else
     {
-        Node<Type> * insertNode = new Node<Type>(value);
+        Node<Type> * insertedNode = new Node<Type>(value);
         Node<Type> * current = front;
         Node<Type> * previous = nullptr;
         
-        for(int position = -; position < index; position++)
+        for(int position = 0; position < index; position++)
         {
             previous = current;
             current = current->getNodePointer();
@@ -206,7 +207,7 @@ Type List<Type> :: remove(int index)
     }
     else if(index == size - 1)
     {
-        for(int spot 0; spot < index; spot++)
+        for(int spot = 0; spot < index; spot++)
         {
             previous = current;
             current = current->getNodePointer();
@@ -219,8 +220,9 @@ Type List<Type> :: remove(int index)
         
     }
     
-    else{
-        for(int spot 0; spot < index; spot++)
+    else
+    {
+        for(int spot = 0; spot < index; spot++)
         {
             previous = current;
             current = current->getNodePointer();
@@ -231,7 +233,7 @@ Type List<Type> :: remove(int index)
         previous->setNodePointer(current);
     }
     
-        removed = toBeRemoved->getNodeData();
+    removed = toBeRemoved->getNodeData();
     
     delete toBeRemoved;
     
@@ -239,4 +241,5 @@ Type List<Type> :: remove(int index)
     size--;
     return removed;
 }
+
 #endif /* List_hpp */

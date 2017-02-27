@@ -26,6 +26,8 @@ private:
     void testNodeTypes();
     void testArrayTemplate();
     void testAdvancedFeatures();
+    
+    void testListIntro();
 
 public:
 	DataStructureController();

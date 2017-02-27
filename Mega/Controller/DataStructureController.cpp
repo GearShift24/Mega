@@ -9,6 +9,8 @@
 #include <iostream>
 #include "../Model/Timer.hpp"
 #include "IntNodeArray.hpp"
+#include "List.hpp"
+#include "Array.hpp"
 
 using namespace std;
 
@@ -104,3 +106,19 @@ void DataStructureController :: testIntArray()
 	}
 }
 
+
+
+
+
+void DataStructureController:: testListIntro()
+{
+    List<int> sample;
+    sample.addFront(2);
+    sample.addEnd(3);
+    sample.addFront(1);
+    cout<< "size shud b 1,2,3" << endl;
+    
+  
+    
+    
+}
