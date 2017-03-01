@@ -41,12 +41,24 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
 }
 
 
-getSize
 
-getFront
+template <class Type>
+int DoublyLinkedList<Type> :: getSize() const
+{
+    return size;
+}
 
-getEnd
+template <class Type>
+BiDirectionalNode<Type>* DoublyLinkedList<Type> :: getFront() const
+{
+    return front;
+}
 
+template <class Type>
+BiDirectionalNode<Type>* DoublyLinkedList<Type> :: getEnd() const
+{
+    return end;
+}
 
 
 

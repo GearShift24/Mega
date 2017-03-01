@@ -35,6 +35,7 @@
 		677D1F051E671BED009C9B02 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Mega/Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		677D1F061E671BED009C9B02 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Mega/Model/Timer.cpp; sourceTree = "<group>"; };
 		677D1F0A1E67286F009C9B02 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Mega/Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
+		677D1F0B1E672EAB009C9B02 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Mega/Model/Stack.hpp; sourceTree = "<group>"; };
 		67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Mega/Controller/DataStructureController.cpp; sourceTree = "<group>"; };
 		67EFB6BB1E51FCEE004183E4 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Mega/Controller/DataStructureController.hpp; sourceTree = "<group>"; };
 		67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeRunner.cpp; path = Mega/Controller/NodeRunner.cpp; sourceTree = "<group>"; };
@@ -55,6 +56,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		677D1F0C1E672EB5009C9B02 /* Typed data samples */ = {
+			isa = PBXGroup;
+			children = (
+				67F55B311E648D19003560CD /* BiDirectionalNode.hpp */,
+				677D1F0A1E67286F009C9B02 /* DoublyLinkedList.hpp */,
+				677D1F0B1E672EAB009C9B02 /* Stack.hpp */,
+			);
+			name = "Typed data samples";
+			sourceTree = "<group>";
+		};
+		677D1F0D1E672EC2009C9B02 /* old hpp */ = {
+			isa = PBXGroup;
+			children = (
+				677D1F031E671BED009C9B02 /* IntNode.cpp */,
+				677D1F041E671BED009C9B02 /* IntNodeArray.cpp */,
+				677D1F061E671BED009C9B02 /* Timer.cpp */,
+				677D1F051E671BED009C9B02 /* IntNodeArray.hpp */,
+				674254101E54B231009E9002 /* Timer.hpp */,
+				67F011751E48D5E300802D11 /* IntNode.hpp */,
+			);
+			name = "old hpp";
+			sourceTree = "<group>";
+		};
 		67EFB6BF1E51FCF5004183E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,17 +117,11 @@
 		67F011771E48D5EC00802D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				677D1F031E671BED009C9B02 /* IntNode.cpp */,
-				677D1F041E671BED009C9B02 /* IntNodeArray.cpp */,
-				677D1F061E671BED009C9B02 /* Timer.cpp */,
-				677D1F051E671BED009C9B02 /* IntNodeArray.hpp */,
-				674254101E54B231009E9002 /* Timer.hpp */,
-				67F011751E48D5E300802D11 /* IntNode.hpp */,
+				677D1F0D1E672EC2009C9B02 /* old hpp */,
 				67EFB6C31E5208D9004183E4 /* Node.hpp */,
 				6742540E1E54AAB2009E9002 /* Array.hpp */,
 				670665661E5CA3D900A9CC9C /* List.hpp */,
-				67F55B311E648D19003560CD /* BiDirectionalNode.hpp */,
-				677D1F0A1E67286F009C9B02 /* DoublyLinkedList.hpp */,
+				677D1F0C1E672EB5009C9B02 /* Typed data samples */,
 			);
 			name = Model;
 			sourceTree = "<group>";
