@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
+      <x>472</x>
       <y>152</y>
       <w>312</w>
       <h>168</h>
@@ -29,7 +29,7 @@ bg=#9993494</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>88</x>
+      <x>344</x>
       <y>72</y>
       <w>152</w>
       <h>40</h>
@@ -42,7 +42,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
+      <x>776</x>
       <y>224</y>
       <w>208</w>
       <h>32</h>
@@ -54,7 +54,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>712</x>
+      <x>968</x>
       <y>176</y>
       <w>256</w>
       <h>120</h>
@@ -74,7 +74,7 @@ bg=#8993334</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>192</x>
+      <x>448</x>
       <y>368</y>
       <w>344</w>
       <h>232</h>
@@ -105,7 +105,7 @@ bg=#8546</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>584</x>
+      <x>840</x>
       <y>360</y>
       <w>392</w>
       <h>264</h>
@@ -135,7 +135,7 @@ bg=#4252545</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
+      <x>784</x>
       <y>456</y>
       <w>72</w>
       <h>32</h>
@@ -147,7 +147,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>192</x>
+      <x>448</x>
       <y>128</y>
       <w>792</w>
       <h>192</h>
@@ -160,7 +160,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>168</x>
+      <x>424</x>
       <y>336</y>
       <w>832</w>
       <h>344</h>
@@ -173,8 +173,8 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>632</x>
-      <y>696</y>
+      <x>904</x>
+      <y>728</y>
       <w>464</w>
       <h>240</h>
     </coordinates>
@@ -202,19 +202,19 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>488</x>
+      <x>616</x>
       <y>592</y>
-      <w>240</w>
-      <h>120</h>
+      <w>384</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
-    <additional_attributes>280.0;130.0;10.0;10.0</additional_attributes>
+    <additional_attributes>460.0;170.0;160.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>96</x>
+      <x>352</x>
       <y>0</y>
       <w>120</w>
       <h>64</h>
@@ -230,18 +230,18 @@ Method</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>184</x>
+      <x>480</x>
       <y>592</y>
-      <w>176</w>
+      <w>136</w>
       <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>24</x>
+      <x>280</x>
       <y>704</y>
       <w>592</w>
       <h>272</h>
@@ -266,6 +266,120 @@ Method</panel_attributes>
 + setPreviousPointer(BiDirectionalNode&lt;Type&gt; * previous) : void
 
 bg=#654675</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>296</x>
+      <y>1048</y>
+      <w>464</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>/Model :: DoubleLinkedList&lt;Type&gt;/
+--
+- front : BiDirectionalNode&lt;Type&gt; *
+- end : BiDirectionalNode&lt;Type&gt; *
+- size : int
+--
+Non virtual Methods
++ getSize() const : int
++ getFront() const : BiDirectionalNode&lt;Type&gt; *
++ getEnd() const : BiDirectionalNode&lt;Type&gt; *
+
+Virtual methods
++ add(Type value) : void
++ remove(int) : Type
+
+
+bg=#25253</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>968</y>
+      <w>40</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>1280</y>
+      <w>120</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>1368</y>
+      <w>192</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>CircularlyLinkedList
+
+
+bg=red
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>1288</y>
+      <w>88</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>1368</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Queue
+
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>1280</y>
+      <w>24</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>416</x>
+      <y>1376</y>
+      <w>200</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Stacks
+
+bg=red</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
