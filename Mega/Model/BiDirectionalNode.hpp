@@ -6,8 +6,8 @@
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 
-#ifndef BiDirectionalNode_h
-#define BiDirectionalNode_h
+#ifndef BiDirectionalNode_hpp
+#define BiDirectionalNode_hpp
 
 
 template <class Type>
@@ -49,4 +49,4 @@ BiDirectionalNode<Type> :: BiDirectionalNode(Type data) : Node(data)
 }
 
 
-#endif /* BiDirectionalNode_h */
+#endif /* BiDirectionalNode_hpp */
