@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>288</x>
+      <x>432</x>
       <y>152</y>
       <w>312</w>
       <h>168</h>
@@ -29,7 +29,7 @@ bg=#9993494</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>160</x>
+      <x>304</x>
       <y>72</y>
       <w>152</w>
       <h>40</h>
@@ -42,7 +42,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
+      <x>736</x>
       <y>224</y>
       <w>208</w>
       <h>32</h>
@@ -54,7 +54,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
+      <x>928</x>
       <y>176</y>
       <w>256</w>
       <h>120</h>
@@ -74,7 +74,7 @@ bg=#8993334</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
+      <x>408</x>
       <y>368</y>
       <w>344</w>
       <h>232</h>
@@ -105,7 +105,7 @@ bg=#8546</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>656</x>
+      <x>800</x>
       <y>360</y>
       <w>392</w>
       <h>264</h>
@@ -135,7 +135,7 @@ bg=#4252545</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>744</x>
       <y>456</y>
       <w>72</w>
       <h>32</h>
@@ -147,7 +147,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>264</x>
+      <x>408</x>
       <y>128</y>
       <w>792</w>
       <h>192</h>
@@ -160,7 +160,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>240</x>
+      <x>384</x>
       <y>336</y>
       <w>832</w>
       <h>344</h>
@@ -173,7 +173,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
+      <x>864</x>
       <y>728</y>
       <w>464</w>
       <h>240</h>
@@ -202,7 +202,7 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
+      <x>576</x>
       <y>592</y>
       <w>384</w>
       <h>152</h>
@@ -214,7 +214,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
+      <x>312</x>
       <y>0</y>
       <w>120</w>
       <h>64</h>
@@ -230,7 +230,7 @@ Method</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>296</x>
+      <x>440</x>
       <y>592</y>
       <w>136</w>
       <h>128</h>
@@ -241,7 +241,7 @@ Method</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>96</x>
+      <x>240</x>
       <y>704</y>
       <w>592</w>
       <h>272</h>
@@ -271,7 +271,7 @@ bg=#654675</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>112</x>
+      <x>256</x>
       <y>1048</y>
       <w>464</w>
       <h>240</h>
@@ -298,7 +298,7 @@ bg=#25253</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>504</x>
       <y>968</y>
       <w>40</w>
       <h>96</h>
@@ -310,24 +310,35 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>472</x>
+      <x>712</x>
       <y>1280</y>
-      <w>120</w>
-      <h>104</h>
+      <w>88</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;130.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;130.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>488</x>
-      <y>1368</y>
-      <w>192</w>
-      <h>72</h>
+      <x>696</x>
+      <y>1384</y>
+      <w>256</w>
+      <h>168</h>
     </coordinates>
-    <panel_attributes>CircularlyLinkedList
+    <panel_attributes>Model :: CircularList&lt;Type&gt;
+--
+- front : BiDirectionalNode&lt;Type&gt;* 
+- end : BiDirectionalNode&lt;Type&gt;* 
+- size : int
+--
++CircularList() : constructor
++~CircularList() : destructor
 
++add(Type data) : void
++remove(int index) : Type
+
++addAtIndex(int index, Type data) : void
 
 bg=red
 </panel_attributes>
@@ -336,24 +347,37 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>1288</y>
-      <w>88</w>
-      <h>96</h>
+      <x>104</x>
+      <y>1280</y>
+      <w>168</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>190.0;10.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>8</x>
+      <x>32</x>
       <y>1368</y>
-      <w>168</w>
-      <h>72</h>
+      <w>208</w>
+      <h>192</h>
     </coordinates>
-    <panel_attributes>Queue
+    <panel_attributes>Model :: Queue&lt;Type&gt;
+--
+-front : BiDirectionalNode&lt;Type&gt;* 
+-end : BiDirectionalNode&lt;Type&gt;* 
+-size : int
+--
++ Queue() : constructor
++ ~Queue() : destructor
 
++add(Type data) : void
++remove(int index) : Type
+
++enqueue(Type data) : void
++dequeue() : Type
++peek() : Type
 
 bg=red</panel_attributes>
     <additional_attributes/>
@@ -361,30 +385,76 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>568</x>
       <y>1280</y>
-      <w>24</w>
-      <h>112</h>
+      <w>48</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;40.0;110.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>232</x>
-      <y>1376</y>
-      <w>208</w>
-      <h>112</h>
+      <x>472</x>
+      <y>1368</y>
+      <w>216</w>
+      <h>192</h>
     </coordinates>
-    <panel_attributes>Stacks
+    <panel_attributes>Model :: Stacks&lt;Type&gt;
 --
+- front : BiDirectionalNode&lt;Type&gt;* 
+- end : BiDirectionalNode&lt;Type&gt;* 
+- size: int
+--
++ Stack() : constructor
++ ~Stack() : destructor
 
---
-+Stack();
-+ add(Type Value) : void
++ push(Type data) : void
++ pop() : Type
++ peek() : Type
+
++ add(Type data) : void
++ remove(int index) : Type
 
 bg=red</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>248</x>
+      <y>1376</y>
+      <w>216</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Model :: DoubleList&lt;Type&gt;
+--
+front : BiDirectionalNode&lt;Type&gt; *
+-end : BiDirectionalNode&lt;Type&gt;* 
+-size : int
+--
++DoubleList() : Constructor
++~DoubleList() : Destructor
+
++add(Type data) : void
++remove(int index) : Type
+
++addFront(Type data) : void
++addEnd(Type data) : void
+
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>344</x>
+      <y>1280</y>
+      <w>40</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

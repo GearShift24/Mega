@@ -19,7 +19,10 @@ public:
     void add(Type value);
 };
 
-
+/*
+ the add method only adds to the end on a stack. Never at an index.
+ 
+ */
 template <class Type>
 void Stack<Type> :: add(Type valuetoAdd) : DoublyLinkedList :: add (valueToAdd)
 {
