@@ -29,9 +29,35 @@ public:
  
  */
 template <class Type>
-void Stack<Type> :: add(Type valuetoAdd) //: DoublyLinkedList :: add (valueToAdd)
+void Stack<Type> :: add(Type valuetoAdd)
 {
+    push(valueToAdd);
+}
+
+/*
+ Adds supplied object to the stack to the end.
+ Set new object to point to end
+ Increase the size by 1.
+ adjusts the end pointer to reflect the new end of the stack.
+*/
+templace <class Type>
+void Stack<Type> :: push(Type addedThing)
+{
+    BiDirectionalNode<Type> * addToStack = new BiDirectionalNode(addedThing);
     
+    if(this->size == 0 || this->front == nullptr || this->end == nullptr)
+    {
+        this->front = addToStack;
+    }
+    else()
+    {
+        this->end->setNextPointer(addToStack);
+        addToStack ->setPreviousPointer(this->end);
+    }
+    
+    this->end = addToStack;
+    this->size++;
+
 }
 
 #endif /* Stack_hpp */
