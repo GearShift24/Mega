@@ -33,7 +33,7 @@ void IntNode :: setNodeData(int newValue)
 	this->nodeData = newValue;
 }
 
-void IntNode :: setNodePointer(IntNode * nodePointer)
+void IntNode :: setNextPointer(IntNode * nodePointer)
 {
 	this->nodePointer = nodePointer;
 }

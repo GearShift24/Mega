@@ -19,7 +19,7 @@ IntNodeArray::IntNodeArray(int size)
 	for(int index = 1; index < size; index++)
 	{
 		IntNode * current = new IntNode();
-		current->setNodePointer(front);
+		current->setNextPointer(front);
 		front = current;
 	}
 }

@@ -89,7 +89,7 @@ void List<Type> :: addFront(Type value)
     {
         Node<Type> * newFirst = new Node<Type>();
         newFirst->setNodeData(value);
-        newFirst->setNodePointer(front);
+        newFirst->setNextPointer(front);
         //or
 //        Node<Type> * newFirst = new Node<Type>(value, front);
         front = newFirst;
@@ -114,7 +114,7 @@ void List<Type> :: addEnd(Type data)
     
     else
     {
-        end->setNodePointer(added);
+        end->setNextPointer(added);
         this->end = added;
     }
     
@@ -147,8 +147,8 @@ void List<Type> :: addAtIndex(int index, Type value)
             current = current->getNodePointer();
         }
         
-        previous->setNodePointer(insertedNode);
-        insertedNode->setNodePointer(current);
+        previous->setNextPointer(insertedNode);
+        insertedNode->setNextPointer(current);
         
         size++;
     }
@@ -214,7 +214,7 @@ Type List<Type> :: remove(int index)
         }
         
         toBeRemoved = current;
-        current->setNodePointer(nullptr);
+        current->setNextPointer(nullptr);
         this->end = previous;
         
         
@@ -230,7 +230,7 @@ Type List<Type> :: remove(int index)
         
         toBeRemoved = current;
         current = toBeRemoved->getNodePointer();
-        previous->setNodePointer(current);
+        previous->setNextPointer(current);
     }
     
     removed = toBeRemoved->getNodeData();

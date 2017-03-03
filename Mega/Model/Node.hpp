@@ -25,7 +25,7 @@ public:
     Type getNodeData();
     Node<Type> * getNodePointer();
     void setNodeData(Type value);
-    void setNodePointer(Node<Type> * nextPointer);
+    void setNextPointer(Node<Type> * nextPointer);
 };
 
 
@@ -77,7 +77,7 @@ void Node<Type> :: setNodeData(Type data)
 }
 
 template <class Type>
-void Node<Type> :: setNodePointer(Node<Type> * pointer)
+void Node<Type> :: setNextPointer(Node<Type> * pointer)
 {
     this->nodePointer = pointer;
 }

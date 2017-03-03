@@ -34,7 +34,7 @@ public:
     int getNodeData();
     IntNode * getNodePointer();
     void setNodeData(int value);
-    void setNodePointer(IntNode * nextNode);
+    void setNextPointer(IntNode * nextNode);
     
 
     
