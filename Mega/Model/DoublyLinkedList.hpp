@@ -1,5 +1,5 @@
-#ifndef DoublyLinkedList_h
-#define DoublyLinkedList_h
+#ifndef DoublyLinkedList_hpp
+#define DoublyLinkedList_hpp
 
 #include "BiDirectionalNode.hpp"
 
@@ -76,4 +76,4 @@ void DoublyLinkedList<Type> :: setEnd(BiDirectionalNode<Type> * end)
 {
     this->end = end;
 }
-#endif /* DoublyLinkedList_h */
+#endif /* DoublyLinkedList_hpp */
