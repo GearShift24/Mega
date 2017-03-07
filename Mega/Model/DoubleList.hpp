@@ -17,6 +17,12 @@ private:
 public: DoubleList();
     ~DoubleList();
     
+    void add(Type data);
+    Type remove(int index);
+    void AddAtIndexFast(int index, Type value);
+    void addAtIndex(int index, Type value);
+    Type getFromIndex(int index);
+    Type getFromIndexFast(int index);
 }
 
 
@@ -36,5 +42,12 @@ DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
         delete remove;
         remove = this->getFront();
     }
+    
+    
+    
+    
+    
+    
+    
 }
 #endif /* DoubleList_hpp */
