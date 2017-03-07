@@ -20,14 +20,43 @@ public:
     
     void add(Type value);
     Type remove(int index);
-    void Type enqueue(Type Data);
+    void enqueue(Type Data);
     Type dequeue();
     Type peek();
+}
+template <class Type>
+Queue<Type> :: Queue() : DoublyLinkedList<Type>()
+{
     
-    
+}
+template <class Type>
+Queue<Type> :: ~Queue() : DoublyLinkedList<Type>()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
 }
 
 
+
+
+/*
+ call enqueue method
+ Method implemented to ensure the child class is NOT abstract
+ */
+template <class Type>
+void Queue<Type> :: add(Type value)
+{
+    enqueue(value);
+}
+
+/* 
+ calls deque with an assert
+ */
 
 template <class Type>
 Type Queue<Type> :: remove(int index)
@@ -39,6 +68,31 @@ Type Queue<Type> :: remove(int index)
 
 
 
+
+/*
+ 1.create a node
+ 2.check is size == 0, adjust front to point to new node
+ 3. Else, add new node to the ends next , and connects new nodes to previous to end
+ 4.Move end to new node
+ 5. adjust size + 1
+ */
+
+ template <class Type>
+ Type Queue<Type> :: enqueue(Type insertedValue)
+ {
+     BiDirectionalNode<Type>  * added = new BiDirectionalNode<Type>(insertedValue);
+     if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
+     {
+         this->setFront(added);
+     }
+     else
+     {
+         this->getEnd()->setNextPointer(added);
+         added->setPreviousPointer(this->getEnd());
+     }
+     this->setEnd(added);
+     this->setSize(this->getSize() + 1);
+ }
 
 
 
@@ -77,8 +131,6 @@ Type Queue<Type> :: dequeue()
     
     return removedValue;
 }
- 
-
 
 
 /*

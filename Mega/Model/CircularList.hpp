@@ -14,8 +14,30 @@ template <class Type>
 class CircularList : DoublyLinkedList<Type>
 {
 private:
-public:
+public: CircularList();
+    ~CircularList();
     
 }
+
+template <class Type>
+CircularList<Type> :: CircularList() : DoublyLinkedList<Type>()
+{
+    
+}
+
+
+template <class Type>
+CircularList<Type> :: ~CircularList() : DoublyLinkedList<Type>()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
+}
+
+
 
 #endif /* CircularList_hpp */

@@ -14,8 +14,27 @@ template <class Type>
 class DoubleList : DoublyLinkedList<Type>
 {
 private:
-public:
+public: DoubleList();
+    ~DoubleList();
     
 }
 
+
+template <class Type>
+DoubleList<Type> :: DoubleList() : DoublyLinkedList<Type>()
+{
+    
+}
+
+template <class Type>
+DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
+{
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
+}
 #endif /* DoubleList_hpp */
