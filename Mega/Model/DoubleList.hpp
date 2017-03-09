@@ -26,6 +26,9 @@ public: DoubleList();
 }
 
 
+
+
+
 template <class Type>
 DoubleList<Type> :: DoubleList() : DoublyLinkedList<Type>()
 {
@@ -33,19 +36,38 @@ DoubleList<Type> :: DoubleList() : DoublyLinkedList<Type>()
 }
 
 template <class Type>
-DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
+DoubleList<Type> :: ~DoubleList()
 {
-    BiDirectionalNode<Type> * remove = this->getFront();
-    while(this->getFront() != nullptr)
+}
+
+
+template <class Type>
+DoubleList<Type> :: add(Type value)
+{
+    BiDirectionalNode<Type> * addedNode = new BiDirectionalNode<Type>(value);
+    if(this->getSize() == 0)
     {
-        this->setFront(this->getFront()->getNextPointer());
-        delete remove;
-        remove = this->getFront();
+        this->setFront(addedNode);
+        
+    }
+    else
+    {
+        this->getEnd()->setNextPointer(addedNode);
+        addedNode->setPreviousPointer(this->getEnd());
     }
     
+    this->setEnd(addedNode);
+    this->setSize(this->getSize() + 1);
+}
+
+template <class Type>
+Type DoubleList<Type> :: remove(int index)
+{
+    Type derp;
+    return derp;
+}
     
     
-<<<<<<< Updated upstream
     template <class>
     Type DoubleList<Type> :: getFromIndex(int index)
     {
@@ -61,7 +83,6 @@ DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
         
         return valueAtIndex;
     }
-    
     
     
     template <class>
@@ -90,6 +111,7 @@ DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
     }
     
         
+        
         template <class>
         Type DoubleList<Type> :: addAtIndex(int index, type value)
         {
@@ -97,7 +119,7 @@ DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
     
     
         template <class>
-        Type DoubleList<Type> :: addatIndexFast(int index, type value)
+        Type DoubleList<Type> :: addAtIndexFast(int index, type value)
         {
         }
 ßß#endif /* DoubleList_hpp */

@@ -10,6 +10,13 @@
 
 #include "../Model/Array.hpp"
 #include "../Model/Node.hpp"
+#include "../Model/Timer.hpp"
+#include "../Model/IntNodeArray.hpp"
+#include "../Model/List.hpp"
+#include "../Model/DoubleList.hpp"
+#include "../Model/Stack.hpp"
+#include "../Model/Queue.hpp"
+#include "../Model/CircularList.hpp"
 #include <string>
 using namespace std;
 
@@ -17,15 +24,14 @@ using namespace std;
 class DataStructureController
 {
 private:
-    
-    Node<int> numberNode;
-    Node<string> wordNode;
+
     Array<int> numberArray;
     
     void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();
     void testAdvancedFeatures();
+    void testListTiming();
     
     void testListIntro();
 

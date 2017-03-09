@@ -50,8 +50,8 @@ BiDirectionalNode<Type> :: BiDirectionalNode(Type data) : Node(data)
     this->previous = nullptr;
 }
 
-Templace <class Type>
-BiDirectionalNode<Type> ::    BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next) : Node(data, next)
+template <class Type>
+BiDirectionalNode<Type> :: BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next) Node(data, next)
 {
     this->nextPointer = next;
     this->previous = previous;
