@@ -45,6 +45,7 @@ DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
     
     
     
+<<<<<<< Updated upstream
     template <class>
     Type DoubleList<Type> :: getFromIndex(int index)
     {
@@ -99,5 +100,4 @@ DoubleList<Type> :: ~DoubleList() : DoublyLinkedList<Type>()
         Type DoubleList<Type> :: addatIndexFast(int index, type value)
         {
         }
-
-#endif /* DoubleList_hpp */
+ßß#endif /* DoubleList_hpp */
