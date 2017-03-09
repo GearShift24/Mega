@@ -23,14 +23,15 @@ public:
     void enqueue(Type Data);
     Type dequeue();
     Type peek();
-}
+};
+
 template <class Type>
 Queue<Type> :: Queue() : DoublyLinkedList<Type>()
 {
     
 }
 template <class Type>
-Queue<Type> :: ~Queue() : DoublyLinkedList<Type>()
+Queue<Type> :: ~Queue()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
     while(this->getFront() != nullptr)
@@ -78,7 +79,7 @@ Type Queue<Type> :: remove(int index)
  */
 
  template <class Type>
- Type Queue<Type> :: enqueue(Type insertedValue)
+ void Queue<Type> :: enqueue(Type insertedValue)
  {
      BiDirectionalNode<Type>  * added = new BiDirectionalNode<Type>(insertedValue);
      if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)

@@ -19,11 +19,11 @@ public: DoubleList();
     
     void add(Type data);
     Type remove(int index);
-    void AddAtIndexFast(int index, Type value);
+    void addAtIndexFast(int index, Type value);
     void addAtIndex(int index, Type value);
     Type getFromIndex(int index);
     Type getFromIndexFast(int index);
-}
+};
 
 
 
@@ -42,7 +42,7 @@ DoubleList<Type> :: ~DoubleList()
 
 
 template <class Type>
-DoubleList<Type> :: add(Type value)
+void DoubleList<Type> :: add(Type value)
 {
     BiDirectionalNode<Type> * addedNode = new BiDirectionalNode<Type>(value);
     if(this->getSize() == 0)
@@ -64,62 +64,90 @@ template <class Type>
 Type DoubleList<Type> :: remove(int index)
 {
     Type derp;
+    BiDirectionalNode<Type> * nodeToTakeOut = this->getFront();
+    for(int spot = 0; spot < index; spot ++)
+    {
+        nodeToTakeOut = nodeToTakeOut->getNextPointer();
+    }
+    
+    derp = nodeToTakeOut->getNodeData();
+    
+    BiDirectionalNode<Type> * prev = nodeToTakeOut->getPreviousPointer();
+    BiDirectionalNode<Type> * next = nodeToTakeOut->getNextPointer();
+    
+    prev->setNextPointer(next);
+    next->setPreviousPointer(prev);
+    
+    delete nodeToTakeOut;
+    
+    this->setSize(this->getSize() -1);
     return derp;
 }
-    
-    
-    template <class>
-    Type DoubleList<Type> :: getFromIndex(int index)
+
+
+
+
+template <class Type>
+Type DoubleList<Type> :: getFromIndexFast(int index)
+{
+    assert(index >= 0 && index < this->getSize());
+    Type valueAtIndex;
+    BiDirectionalNode<Type> * reference;
+    if(index < this->getSize() / 2)
     {
-        assert(index >= 0 && index < this->getSize());
-        Type vvalueAtIndex;
-        
-        BiDirectionalNode<Type> * reference = this->getFront();
+        reference = this->getFront();
         for(int position = 0; position < index; position++)
         {
-            refrence = refrence->getNextPointer();
+            reference = reference->getNextPointer();
+        }
+    }
+    else
+    {
+        reference = this->getEnd();
+        for(int position = this->getSize() -1; position > index; position--)
+        {
+            reference =  reference->getPreviousPointer();
         }
         valueAtIndex = reference->getNodeData();
         
-        return valueAtIndex;
+        
     }
-    
-    
-    template <class>
-    Type DoubleList<Type> :: getFromIndexFast(int index)
+    return valueAtIndex;
+}
+
+
+
+
+    template <class Type>
+    Type DoubleList<Type> :: getFromIndex(int index)
     {
         assert(index >= 0 && index < this->getSize());
         Type valueAtIndex;
-        BiDirectionalNode<Type> * reference;
-        if(index < this->getSize() / 2)
+        
+        BiDirectionalNode<Type> * refrence = this->getFront();
+        for(int position = 0; position < index; position++)
         {
-            reference = this->getFront();
-            for(int position = 0; position < index; position++)
-            {
-                reference = reference->getNextPointer();
-            }
+            
+            refrence = refrence->getNextPointer();
+
         }
-            else
-            {
-                reference = this->getEnd();
-                for(int position = this->getSize() -1; position > index; position--)
-                {
-                    reference = refrence->getPreviousPointer();
-                }
-                valueAtIndex = reference->getNodeData();
-                return valueAtIndex;
+        valueAtIndex = refrence->getNodeData();
+        
+        return valueAtIndex;
+    }
+
+
+    
+    
+    
+    template <class Type>
+    void DoubleList<Type> :: addAtIndex(int index, Type value)
+    {
     }
     
-        
-        
-        template <class>
-        Type DoubleList<Type> :: addAtIndex(int index, type value)
-        {
-        }
     
-    
-        template <class>
-        Type DoubleList<Type> :: addAtIndexFast(int index, type value)
-        {
-        }
-ßß#endif /* DoubleList_hpp */
+    template <class Type>
+    void DoubleList<Type> :: addAtIndexFast(int index, Type value)
+    {
+    }
+    #endif /* DoubleList_hpp */

@@ -37,7 +37,7 @@ Stack<Type> :: Stack() : DoublyLinkedList<Type>()
  just goes through the list and removes your crap
  */
 template <class Type>
-Stack<Type> :: ~Stack() : DoublyLinkedList<Type>()
+Stack<Type> :: ~Stack()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
     while(this->getFront() != nullptr)
@@ -53,12 +53,12 @@ Stack<Type> :: ~Stack() : DoublyLinkedList<Type>()
  */
 
 template <class Type>
-void Stack<Type> :: add(Type valuetoAdd)
+void Stack<Type> :: add(Type valueToAdd)
 {
     push(valueToAdd);
 }
 
-/
+
 
 /*
  1. create a new node
@@ -67,19 +67,19 @@ void Stack<Type> :: add(Type valuetoAdd)
  4.move end to the new node
  5.increase the size by 1
  */
-templace <class Type>
+template <class Type>
 void Stack<Type> :: push(Type addedThing)
 {
     BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addedThing);
     
-    if(this->size == 0 || this->front == nullptr || this->getEnd == nullptr)
+    if(this->size == 0 || this->front == nullptr || this->getEnd() == nullptr)
     {
         this->setFront(addToStack);
     }
-    else()
+    else
     {
         this->getEnd->setNextPointer(addToStack);
-        addToStack->setPreviousPointer(this->getEnd();
+        addToStack->setPreviousPointer(this->getEnd());
     }
     
         this->setEnd(addToStack);
@@ -94,7 +94,7 @@ void Stack<Type> :: push(Type addedThing)
 template <class Type>
 Type Stack<Type> :: remove(int index)
     {
-        assert(index == this->getSize() - 1 && this->getSize() > 0;
+        assert(index == this->getSize() - 1 && this->getSize() > 0);
                return pop();
     }
         

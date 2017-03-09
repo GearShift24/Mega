@@ -17,7 +17,7 @@ private:
 public: CircularList();
     ~CircularList();
     
-}
+};
 
 template <class Type>
 CircularList<Type> :: CircularList() : DoublyLinkedList<Type>()
@@ -27,7 +27,7 @@ CircularList<Type> :: CircularList() : DoublyLinkedList<Type>()
 
 
 template <class Type>
-CircularList<Type> :: ~CircularList() : DoublyLinkedList<Type>()
+CircularList<Type> :: ~CircularList()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
     while(this->getFront() != nullptr)

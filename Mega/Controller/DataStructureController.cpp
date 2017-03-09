@@ -16,9 +16,7 @@ using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-    wordNode = Node<string>("derpy");
-    numberNode = Node<int>();
-    this->numberArray = Array<int>(1);
+        testListTiming();
 }
 
 
@@ -127,7 +125,7 @@ void DataStructureController :: testListTiming()
         timingList.add(rand());
     }
     
-    long slowTme [1000];
+    long slowTime [1000];
     long fastTime [1000];
     double averageSlow = 0.00, averageFast = 0.00;
     Timer doubleTimer;
@@ -135,13 +133,13 @@ void DataStructureController :: testListTiming()
     for(int index = 0; index < 1000; index++)
     {
         int randomIndex = rand() % 10000;
-        doubleTimer.startTime();
+        doubleTimer.startTimer();
         timingList.getFromIndex(randomIndex);
         doubleTimer.stopTimer();
         slowTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
         doubleTimer.resetTimer();
         
-        doubleTimer.startTime();
+        doubleTimer.startTimer();
         timingList.getFromIndexFast(randomIndex);
         doubleTimer.stopTimer();
         fastTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
