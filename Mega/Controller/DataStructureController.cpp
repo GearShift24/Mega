@@ -12,11 +12,12 @@
 #include "List.hpp"
 #include "Array.hpp"
 
+
 using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-        testListTiming();
+  
 }
 
 
@@ -44,8 +45,8 @@ void DataStructureController :: testArrayTemplate()
 void DataStructureController :: start()
 {
 
-    testListTiming();
-    
+    testMemeQueue();
+    testNumberStack();
 }
 
 
@@ -156,4 +157,90 @@ void DataStructureController :: testListTiming()
       cout << "The average speed for the getFromIndexFast method was: " << averageFast << " microseconds." << endl;
     
     cout << "A time savings?? of: " << averageSlow - averageFast << " microseconds." << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//test meme section
+
+void DataStructureController :: testMemeQueue()
+{
+    Meme datMeme("dat boi");
+    Meme cenaMeme("Johnnnn cena!");
+    Meme sithMeme("Lord Sideous shooting star whooooo.");
+    
+    
+    datMeme.setHipsterQuotient(200.00);
+        cenaMeme.setHipsterQuotient(100000.00);
+        sithMeme.setHipsterQuotient(2070.00);
+    
+    sithMeme.setMainstream(true);
+    
+    cenaMeme.setDankness(10000);
+     sithMeme.setDankness(68);
+    
+    Queue<Meme> memeQueue;
+    memeQueue.add(datMeme);
+    memeQueue.enqueue(cenaMeme);
+    memeQueue.enqueue(sithMeme);
+    
+        memeQueue.remove(0);
+    
+    cout << "- Since you are probably a normie you will love this new mainstream meme! It is called" << sithMeme.getTitle() << " and as you can see the fact that it is mainstream is " << sithMeme.isMainstream() << "." << endl;
+    
+    
+    cout << "-Did you know that john cena has a dankness of: " << cenaMeme.getDankness() << "." << endl;
+    
+    
+    Meme temp = memeQueue.dequeue();
+    cout<< "-The top meme you tried to kill was: " << temp.getTitle() << " but heroes never die, well i mean it did die but here ist the info of its hipsterness " << temp.getHispterQuotient() << "." <<endl;
+    
+    cout<< "-If you were wondering there are " << memeQueue.getSize() << " amount of memes in this queue, ayy!" << endl;
+    
+    cout << "-The Dankness of the first meme in the line of the queue is: " << memeQueue.peek().getDankness() << " which is pretty cool if you ask me." << endl;
+    
+}
+
+
+void DataStructureController :: testNumberStack()
+{
+    int num1;
+    int num2;
+    int num3;
+    
+    
+   
+    Stack<int> numberStack;
+    
+    numberStack.push(num2);
+    numberStack.add(num1);
+    numberStack.push(num3);
+    
+    cout << " " << endl;
+     cout << " " << endl;
+     cout << " " << endl;
+  
+    cout << "-The top number right now is " << numberStack.peek()<< endl;
+      numberStack.push(num2);
+    
+    int temp = numberStack.pop();
+    cout << "-You killed the " << temp << endl;
+    numberStack.push(num1);
+    
+    
+   numberStack.remove(numberStack.getSize()-1);
+    cout << "-The final size of the stack is " << numberStack.getSize() << " and the top thing is " << numberStack.peek()<<endl;
 }

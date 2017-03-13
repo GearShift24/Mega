@@ -11,7 +11,7 @@
 #include "DoublyLinkedList.hpp"
 
 template <class Type>
-class Queue : DoublyLinkedList<Type>
+class Queue : public DoublyLinkedList<Type>
 {
 private:
 public:
@@ -123,9 +123,10 @@ Type Queue<Type> :: dequeue()
     }
     else
     {
+        this->getFront()->setPreviousPointer(nullptr);
         this->setFront(removeMe->getNextPointer());
     }
-    this->setFront()->setPreviousPointer(nullptr);
+
     
     delete removeMe;
     this->setSize(this->getSize() -1);

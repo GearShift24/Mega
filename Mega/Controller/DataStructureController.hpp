@@ -17,6 +17,7 @@
 #include "../Model/Stack.hpp"
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
+#include "../Model/Meme.hpp"
 #include <string>
 using namespace std;
 
@@ -30,10 +31,14 @@ private:
     void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();
+    void testListIntro();
     void testAdvancedFeatures();
     void testListTiming();
+    //meme testing
+    void testMemeQueue();
+    void testNumberStack();
     
-    void testListIntro();
+
 
 public:
 	DataStructureController();

@@ -11,7 +11,7 @@
 #include "DoublyLinkedList.hpp"
 
 template <class Type>
-class CircularList : DoublyLinkedList<Type>
+class CircularList : public  DoublyLinkedList<Type>
 {
 private:
 public: CircularList();

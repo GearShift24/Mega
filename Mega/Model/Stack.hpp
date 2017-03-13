@@ -11,7 +11,7 @@
 #include "DoublyLinkedList.hpp"
 
 template <class Type>
-class Stack : DoublyLinkedList<Type>
+class Stack : public  DoublyLinkedList<Type>
 {
 private:
 public:
@@ -72,18 +72,18 @@ void Stack<Type> :: push(Type addedThing)
 {
     BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addedThing);
     
-    if(this->size == 0 || this->front == nullptr || this->getEnd() == nullptr)
+    if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {
         this->setFront(addToStack);
     }
     else
     {
-        this->getEnd->setNextPointer(addToStack);
+        this->getEnd()->setNextPointer(addToStack);
         addToStack->setPreviousPointer(this->getEnd());
     }
     
         this->setEnd(addToStack);
-    this-setSize(this->getSize() + 1);
+    this->setSize(this->getSize() + 1);
 }
                                        
                                     
@@ -105,7 +105,7 @@ template <class Type>
                Type Stack<Type> :: peek()
                {
                    assert(this->getSize() > 0);
-                   return this->end->getNodeData();
+                   return this->getEnd()->getNodeData();
                }
         
                
@@ -121,7 +121,7 @@ template <class Type>
 Type Stack<Type> :: pop()
     {
         assert(this->getSize() > 0);
-        Type removed = this->getEnd()->getEnd();
+        Type removed = this->getEnd()->getNodeData();
         
         BiDirectionalNode<Type> * update = this->getEnd();
         update = update->getPreviousPointer();
