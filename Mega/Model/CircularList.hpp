@@ -113,7 +113,12 @@ Type CircularList<Type> :: remove(int index)
     
 }
 
-
+/*
+ A helper method to cut the speed needed to get to a specific node in the list.
+ Precondition: The @param index is within the range: size < index <= 0
+ will only be called after passing the assert call.
+ Returns the node at the specifid index.
+ */
 template <class Type>
 BiDirectionalNode<Type> * CircularList<Type> :: findNode(int index)
 {
