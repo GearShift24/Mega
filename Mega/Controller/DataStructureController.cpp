@@ -17,7 +17,8 @@ using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-  
+    testMemeQueue();
+      testNumberStack();
 }
 
 
