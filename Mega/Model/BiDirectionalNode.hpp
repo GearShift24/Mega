@@ -61,8 +61,6 @@ BiDirectionalNode<Type> :: BiDirectionalNode(Type data, BiDirectionalNode<Type> 
 
 
 
-
-
 //getters/setters
 
 template <class Type>
@@ -76,8 +74,6 @@ BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getPreviousPointer()
 {
     return this->previous;
 }
-
-
 
 
 

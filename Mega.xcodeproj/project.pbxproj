@@ -79,8 +79,8 @@
 				677D1F031E671BED009C9B02 /* IntNode.cpp */,
 				677D1F041E671BED009C9B02 /* IntNodeArray.cpp */,
 				677D1F061E671BED009C9B02 /* Timer.cpp */,
-				677D1F051E671BED009C9B02 /* IntNodeArray.hpp */,
 				674254101E54B231009E9002 /* Timer.hpp */,
+				677D1F051E671BED009C9B02 /* IntNodeArray.hpp */,
 				67F011751E48D5E300802D11 /* IntNode.hpp */,
 			);
 			name = "old hpp";

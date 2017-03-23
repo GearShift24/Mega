@@ -38,6 +38,7 @@ public:
     Node<Type> * getFront() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
+        int indexOf(Type itemToFind);
     
 };
 //constructor -- creates an array of what you want /size
@@ -163,6 +164,25 @@ Node<Type>* Array<Type> :: getFront() const
     return front;
 }
 
+
+template <class Type>
+int Array<Type> :: indexOf(Type findMe)
+{
+    int index = -1;
+    
+    Node<Type> * searchedPointer = this->getFront();
+    
+    for (int spot = 0; spot < this->getSize(); spot++)
+    {
+        if(findMe == searchedPointer->getNodeData())
+        {
+            return spot;
+        }
+        searchedPointer = searchedPointer->getNextPointer();
+    }
+    
+    return index;
+}
 
 
 #endif /* Array_hpp */

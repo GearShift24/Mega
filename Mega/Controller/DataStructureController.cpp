@@ -17,8 +17,7 @@ using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-    testMemeQueue();
-      testNumberStack();
+    
 }
 
 
@@ -46,8 +45,9 @@ void DataStructureController :: testArrayTemplate()
 void DataStructureController :: start()
 {
 
-    testMemeQueue();
-    testNumberStack();
+//    testMemeQueue();
+//    testNumberStack();
+    testListIntro();
 }
 
 
@@ -115,7 +115,8 @@ void DataStructureController:: testListIntro()
     sample.addFront(2);
     sample.addEnd(3);
     sample.addFront(1);
-    cout<< "size shud b 1,2,3" << endl;
+    cout<< "size shud b 1 ,3" << endl;
+    cout << sample.getFromIndex(0) << "   "<< sample.getFromIndex(2)<< endl;
     
 }
 
