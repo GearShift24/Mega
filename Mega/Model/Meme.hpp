@@ -19,6 +19,9 @@ private:
     int dankness;
     double hispterQuotient;
     bool mainstream;
+    
+    
+    
 public:
     Meme();
     Meme(string title);
@@ -31,8 +34,11 @@ public:
     void setDankness(int dank);
     void setHipsterQuotient(double hispterQuotient);
     void setMainstream(bool mainstream);
+    
+    //Overloading the comparison operators to allow for soring of Meme data
+    bool operator < (Meme & comparedMeme);
+    bool operator > ( Meme & comparedMeme);
+    bool operator == ( Meme & comparedMeme);
 };
-
-
 
 #endif /* Meme_hpp */
