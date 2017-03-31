@@ -7,6 +7,8 @@
 //
 
 #include "CrimeData.hpp"
+#include <string>
+#include <cmath>
 
 CrimeData :: CrimeData()
 {
@@ -229,5 +231,158 @@ void CrimeData :: setAllRobbery(const int & robbery)
 void CrimeData :: setYear(const int & year)
 {
     this->year = year;
+}
+
+
+
+
+
+
+bool CrimeData :: operator < (const CrimeData & comparedData)       //will compare objects , of 2 chosen
+{
+    bool thisIsLessCrime = false;
+    double comparisonFactor = 0.0;
+    
+    if(this->getAllViolent() < comparedData.getAllViolent())
+    {
+        comparisonFactor -=3;
+    
+    }
+    else
+    {
+        comparisonFactor +=3;
+    }
+    
+    if(this->getAllPropertyRates() < comparedData.getAllPropertyRates())
+       {
+           comparisonFactor -= 2.5;
+       }
+    else
+    {
+        comparisonFactor += 2.5;
+    }
+    
+    if(this->getAllViolentRates() < comparedData.getAllViolentRates())
+    {
+        comparisonFactor -=5;
+    }
+    else
+    {
+        comparisonFactor += 5;
+    }
+    
+    if(this->getMurderRates() < comparedData.getMurderRates())
+    {
+        comparisonFactor -= 3;
+    }
+    else
+    {
+        comparisonFactor += 3;
+    }
+    
+    double populationDifference = (this->getPopulation() - comparedData.getPopulation());
+    populationDifference = abs(populationDifference);
+    double populationFactor = 0;
+    
+    if(populationDifference == 50000 && populationDifference < 250000)
+    {
+        populationFactor = .5;
+    }
+    else if (populationDifference >= 250000 && populationDifference < 500000)
+    {
+        populationFactor = 1.5;
+    }
+    else if (populationDifference >= 500000 && populationDifference < 1000000)
+    {
+        populationFactor = 2.0;
+    }
+    else if (populationDifference >= 1000000)
+    {
+        populationFactor = 2.5;
+    }
+    
+    if(comparisonFactor < 0)
+    {
+        thisIsLessCrime = true;
+    }
+    return thisIsLessCrime;
+}
+
+
+bool CrimeData :: operator > (const CrimeData & comparedData)
+{
+    bool thisIsMoreCrime = false;
+    double comparisonFactor = 0.0;
+    
+    if(this->getAllViolent() > comparedData.getAllViolent())
+    {
+        comparisonFactor +=3;
+        
+    }
+    else
+    {
+        comparisonFactor -=3;
+    }
+    
+    if(this->getAllPropertyRates() > comparedData.getAllPropertyRates())        //these get and compare the rates of thigns and add or - the comparison factors
+    {
+        comparisonFactor += 2.5;
+    }
+    else
+    {
+        comparisonFactor -= 2.5;
+    }
+    
+    if(this->getAllViolentRates() > comparedData.getAllViolentRates())
+    {
+        comparisonFactor += 5;
+    }
+    else
+    {
+        comparisonFactor -= 5;
+    }
+    
+    if(this->getMurderRates() > comparedData.getMurderRates())
+    {
+        comparisonFactor += 3;
+    }
+    else
+    {
+        comparisonFactor -= 3;
+    }
+    
+    double populationDifference = (this->getPopulation() - comparedData.getPopulation());
+    populationDifference = abs(populationDifference);                                       //these check the population and make a factor that is used for graph
+    double populationFactor = 0;
+    
+    if(populationDifference == 50000 && populationDifference < 250000)
+    {
+        populationFactor = .5;
+    }
+    else if (populationDifference >= 250000 && populationDifference < 500000)
+    {
+        populationFactor = 1.5;
+    }
+    else if (populationDifference >= 500000 && populationDifference < 1000000)
+    {
+        populationFactor = 2.0;
+    }
+    else if (populationDifference >= 1000000)
+    {
+        populationFactor = 2.5;
+    }
+    
+    if(comparisonFactor > 0)
+    {
+        thisIsMoreCrime = true;
+    }
+    return thisIsMoreCrime;
+}
+
+bool CrimeData :: operator == (const CrimeData & compared)  //this compared isthesame and checks if it is the same
+{
+    bool isThisTheSame = !(*this < compared) && !(*this > compared);
+    
+    return isThisTheSame;
 }
 
