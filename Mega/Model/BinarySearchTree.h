@@ -33,7 +33,62 @@ public:
     void postOrderTraversal();
 };
 
+template <class Type>
+BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
+{
+    this->root = nullptr;
+}
 
+template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTree<Type> : getRoot()
+{
+    return this->root;
+}
 
+template <class Type>
+void BinarySearchTree<Type> :: setRoot(BinarySearchTreeNode<Type> * root)
+{
+    this->root = root;
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+{
+    
+}
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal()
+{
+    
+}
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal()
+{
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateSize(BinarySearchTreeNode<Type> * start)
+{
+    return -99;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
+{
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
+{
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
+{
+    
+}
 
 #endif /* BinarySearchTree_h */
