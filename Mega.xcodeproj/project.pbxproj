@@ -39,6 +39,9 @@
 		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
 		6771A8DD1E9D1F150042EF44 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinaryTreeNode.hpp; path = Mega/Model/BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		6771A8DE1E9D1F240042EF44 /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Mega/Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
+		6771A8DF1E9D24EF0042EF44 /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Mega/Model/Tree.h; sourceTree = "<group>"; };
+		6771A8E11E9D25F10042EF44 /* BTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BTree.h; path = Mega/Model/BTree.h; sourceTree = "<group>"; };
+		6771A8E21E9D26010042EF44 /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTree.h; path = Mega/Model/BinarySearchTree.h; sourceTree = "<group>"; };
 		677D1F031E671BED009C9B02 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Mega/Model/IntNode.cpp; sourceTree = "<group>"; };
 		677D1F041E671BED009C9B02 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Mega/Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		677D1F051E671BED009C9B02 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Mega/Model/IntNodeArray.hpp; sourceTree = "<group>"; };
@@ -109,6 +112,16 @@
 			name = Nodes;
 			sourceTree = "<group>";
 		};
+		6771A8E01E9D25D60042EF44 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				6771A8DF1E9D24EF0042EF44 /* Tree.h */,
+				6771A8E11E9D25F10042EF44 /* BTree.h */,
+				6771A8E21E9D26010042EF44 /* BinarySearchTree.h */,
+			);
+			name = Trees;
+			sourceTree = "<group>";
+		};
 		677D1F0C1E672EB5009C9B02 /* Inherits from doublylinked */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +186,7 @@
 		67F011771E48D5EC00802D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6771A8E01E9D25D60042EF44 /* Trees */,
 				6771A8DC1E9D1EF50042EF44 /* Nodes */,
 				6717FF481E8BF48C0011FDFB /* Meme group */,
 				6717FF471E8BF4640011FDFB /* crime stats */,
