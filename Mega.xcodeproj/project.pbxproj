@@ -37,6 +37,8 @@
 		6717FF451E8BF45F0011FDFB /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Mega/Model/CrimeData.hpp; sourceTree = "<group>"; };
 		6742540E1E54AAB2009E9002 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Mega/Model/Array.hpp; sourceTree = "<group>"; };
 		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
+		6771A8DD1E9D1F150042EF44 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinaryTreeNode.hpp; path = Mega/Model/BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		6771A8DE1E9D1F240042EF44 /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Mega/Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
 		677D1F031E671BED009C9B02 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Mega/Model/IntNode.cpp; sourceTree = "<group>"; };
 		677D1F041E671BED009C9B02 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Mega/Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		677D1F051E671BED009C9B02 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Mega/Model/IntNodeArray.hpp; sourceTree = "<group>"; };
@@ -89,13 +91,22 @@
 		6717FF491E8BF4B60011FDFB /* Basic arrays and lists */ = {
 			isa = PBXGroup;
 			children = (
-				67EFB6C31E5208D9004183E4 /* Node.hpp */,
-				67F55B311E648D19003560CD /* BiDirectionalNode.hpp */,
 				6742540E1E54AAB2009E9002 /* Array.hpp */,
 				670665661E5CA3D900A9CC9C /* List.hpp */,
 				677D1F0A1E67286F009C9B02 /* DoublyLinkedList.hpp */,
 			);
 			name = "Basic arrays and lists";
+			sourceTree = "<group>";
+		};
+		6771A8DC1E9D1EF50042EF44 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				67EFB6C31E5208D9004183E4 /* Node.hpp */,
+				67F55B311E648D19003560CD /* BiDirectionalNode.hpp */,
+				6771A8DD1E9D1F150042EF44 /* BinaryTreeNode.hpp */,
+				6771A8DE1E9D1F240042EF44 /* BinarySearchTreeNode.hpp */,
+			);
+			name = Nodes;
 			sourceTree = "<group>";
 		};
 		677D1F0C1E672EB5009C9B02 /* Inherits from doublylinked */ = {
@@ -162,6 +173,7 @@
 		67F011771E48D5EC00802D11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6771A8DC1E9D1EF50042EF44 /* Nodes */,
 				6717FF481E8BF48C0011FDFB /* Meme group */,
 				6717FF471E8BF4640011FDFB /* crime stats */,
 				677D1F0C1E672EB5009C9B02 /* Inherits from doublylinked */,
