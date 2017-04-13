@@ -313,11 +313,12 @@ else if(removeMe->getLeftChild() == nullptr)
         if(previous == nullptr)
         {
             removeMe->setLeftChild(current->getLeftChild());
-            current->getLeftChild()->setRoot(removeMe);
+            current->getLeftChild()->setRootPointer(removeMe);
         }
         else
         {
-            
+            previous->setRightChild(current->getLeftChild());
+            current->getLeftChild()->setRootPointer(previous);
         }
         
     }
