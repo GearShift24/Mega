@@ -320,8 +320,9 @@ else if(removeMe->getLeftChild() == nullptr)
             previous->setRightChild(current->getLeftChild());
             current->getLeftChild()->setRootPointer(previous);
         }
-        
+        delete current;
     }
+}
 
 //has both children
 
