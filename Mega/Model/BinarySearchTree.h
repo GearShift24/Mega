@@ -103,6 +103,10 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inS
         cout << "node contents: " << inStart->getNodeData() << endl;
         inOrderTraversal(inStart->getRightChild());
     }
+    else
+    {
+        return;
+    }
 }
 
 template <class Type>
@@ -111,12 +115,33 @@ int BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * pre
     preOrderTravesal(root);
 }
 
+tempalte <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
+{
+    if(preStart != nullptr)
+    {
+        cout << "Node conents: " << preStart->getNodeData << endl;
+        preOrderTraversal(preStart->getLeftChild());
+        preOrderTraversal(preStart->getRightChild());
+    }
+}
+
 template <class Type>
 int BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
 {
     postOrderTravesal(root);
 }
-
+tempalte <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * preStart)
+{
+    if(preStart != nullptr)
+    {
+        
+        postOrderTraversal(postStart->getLeftChild());
+        postOrderTraversal(postStart->getRightChild());
+        cout << "Node conents: " << preStart->getNodeData << endl;
+    }
+}
 
 template <class Type>
 void BinarySearchTree<Type> : insert(Type itemToInsert)
