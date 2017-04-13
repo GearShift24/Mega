@@ -16,10 +16,13 @@ class BinarySearchTree : public Tree<Type>
 {
 private:
     BinarySearchTreeNode<Type> * root;
+    
     int calculateSize(BinarySearchTreeNode<Type> * root);
     void inOrderTraversal(BinarySearchTreeNode<Type> * inStart);
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
+    
+    void removeNode(BinarySearchTreeNode<Tree> * & removeMe);
     
 public:
     BinarySearchTree();
@@ -28,15 +31,27 @@ public:
     BinarySearchTreeNode<Type> * getRoot();
     void setRoot(BinarySearchTreeNode<Type> * root);
     
+    void printToFile();
+    
     void inOrderTraversal();
     void preOrderTraversal();
     void postOrderTraversal();
+    
+    bool contains(Type value);
+    void insert(Type itemToInsert);
+    void remove(Type value);
 };
 
 template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 {
     this->root = nullptr;
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree() : Tree<Type>()
+{
+   
 }
 
 template <class Type>
@@ -89,6 +104,50 @@ template <class Type>
 int BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
 {
     
+}
+
+
+template <class Type>
+void BinarySearchTree<Type> : insert(Type itemToInsert)
+{
+    BinarySearchTreeNode<Tree> * insertMe = new BinarySearchTreeNode<Type>(itemToInsert);
+    BinarySearchTreeNode<Tree> * previous = nullptr;
+    BinarySearchTreeNode<Tree> * current = root;
+    if(current == nullptr)
+    {
+        root = insertMe;
+    }
+    else
+    {
+            while(current != nullptr)
+            {
+                previous = current;
+                if(itemToInsert < current->getNodeData())
+                {
+                    current = current->getLeftChild()
+                }
+                else if(itemToInsert > current->getNodeData())
+                {
+                    current = current->getRightChild();
+                }
+                else
+                {
+                    cerr << "item always exists bruh - exiting" << endl;
+                    delete insertMe;
+                    return;
+                }
+            }
+        
+        if(previous->getNodeData() > itemToInsert)
+        {
+            previous->setLeftChild(insertMe);
+        }
+        else
+        {
+            previous->setRightChild(insertMe);
+        }
+        insertMe->setRoot(previous);
+    }
 }
 
 #endif /* BinarySearchTree_h */
