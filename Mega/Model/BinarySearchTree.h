@@ -59,14 +59,13 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
     this->root = nullptr;
 }
 
-template <class Type>
-BinarySearchTree<Type> :: ~BinarySearchTree() : Tree<Type>()
+template <class Type> BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-   
+    delete root;
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> * BinarySearchTree<Type> : getRoot()
+BinarySearchTreeNode<Type> :: BinarySearchTree<Type> : getRoot()
 {
     return this->root;
 }
