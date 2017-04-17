@@ -37,6 +37,8 @@ private:
     //meme testing
     void testMemeQueue();
     void testNumberStack();
+    //testing
+    void testBinarySearchTreeOperations();
     
 
 

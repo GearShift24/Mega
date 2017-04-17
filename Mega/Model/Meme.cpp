@@ -21,7 +21,7 @@ Meme :: Meme()
 Meme :: Meme(string title)
 {
     this->title = title;
-    this->dankness = title.length();
+//    this->dankness = title.length();
     this->hispterQuotient = 3.14;
     this->mainstream = true;
 }
