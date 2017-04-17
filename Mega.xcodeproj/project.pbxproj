@@ -39,7 +39,6 @@
 		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
 		6771A8DD1E9D1F150042EF44 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinaryTreeNode.hpp; path = Mega/Model/BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		6771A8DE1E9D1F240042EF44 /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Mega/Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
-		6771A8DF1E9D24EF0042EF44 /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Mega/Model/Tree.h; sourceTree = "<group>"; };
 		6771A8E11E9D25F10042EF44 /* BTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BTree.h; path = Mega/Model/BTree.h; sourceTree = "<group>"; };
 		6771A8E21E9D26010042EF44 /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTree.h; path = Mega/Model/BinarySearchTree.h; sourceTree = "<group>"; };
 		677D1F031E671BED009C9B02 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Mega/Model/IntNode.cpp; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		67825BC81E69C8FF0085FE6C /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Mega/Model/CircularList.hpp; sourceTree = "<group>"; };
 		67825BC91E69C9220085FE6C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Mega/Model/Queue.hpp; sourceTree = "<group>"; };
 		67825BCA1E69C9630085FE6C /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Mega/Model/DoubleList.hpp; sourceTree = "<group>"; };
+		67D577321EA4FC970072CCFC /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Mega/Model/Tree.h; sourceTree = "<group>"; };
 		67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Mega/Controller/DataStructureController.cpp; sourceTree = "<group>"; };
 		67EFB6BB1E51FCEE004183E4 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Mega/Controller/DataStructureController.hpp; sourceTree = "<group>"; };
 		67EFB6BC1E51FCEE004183E4 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeRunner.cpp; path = Mega/Controller/NodeRunner.cpp; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		6771A8E01E9D25D60042EF44 /* Trees */ = {
 			isa = PBXGroup;
 			children = (
-				6771A8DF1E9D24EF0042EF44 /* Tree.h */,
+				67D577321EA4FC970072CCFC /* Tree.h */,
 				6771A8E11E9D25F10042EF44 /* BTree.h */,
 				6771A8E21E9D26010042EF44 /* BinarySearchTree.h */,
 			);

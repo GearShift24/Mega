@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1096</x>
+      <x>920</x>
       <y>152</y>
       <w>312</w>
       <h>168</h>
@@ -29,7 +29,7 @@ bg=#9993494</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>968</x>
+      <x>792</x>
       <y>72</y>
       <w>152</w>
       <h>40</h>
@@ -42,7 +42,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1400</x>
+      <x>1224</x>
       <y>224</y>
       <w>208</w>
       <h>32</h>
@@ -54,7 +54,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1592</x>
+      <x>1416</x>
       <y>176</y>
       <w>256</w>
       <h>120</h>
@@ -74,7 +74,7 @@ bg=#8993334</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1072</x>
+      <x>896</x>
       <y>368</y>
       <w>344</w>
       <h>232</h>
@@ -105,7 +105,7 @@ bg=#8546</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1464</x>
+      <x>1288</x>
       <y>360</y>
       <w>392</w>
       <h>264</h>
@@ -135,7 +135,7 @@ bg=#4252545</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1408</x>
+      <x>1232</x>
       <y>456</y>
       <w>72</w>
       <h>32</h>
@@ -147,7 +147,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1072</x>
+      <x>896</x>
       <y>128</y>
       <w>792</w>
       <h>192</h>
@@ -160,7 +160,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1048</x>
+      <x>872</x>
       <y>336</y>
       <w>832</w>
       <h>344</h>
@@ -173,7 +173,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1528</x>
+      <x>1352</x>
       <y>728</y>
       <w>464</w>
       <h>240</h>
@@ -202,7 +202,7 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1240</x>
+      <x>1064</x>
       <y>592</y>
       <w>384</w>
       <h>152</h>
@@ -214,7 +214,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>976</x>
+      <x>800</x>
       <y>0</y>
       <w>120</w>
       <h>64</h>
@@ -230,7 +230,7 @@ Method</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1104</x>
+      <x>928</x>
       <y>592</y>
       <w>136</w>
       <h>128</h>
@@ -241,7 +241,7 @@ Method</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>904</x>
+      <x>728</x>
       <y>704</y>
       <w>592</w>
       <h>240</h>
@@ -271,7 +271,7 @@ bg=#654675</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>920</x>
+      <x>744</x>
       <y>1008</y>
       <w>464</w>
       <h>240</h>
@@ -298,7 +298,7 @@ bg=#25253</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1168</x>
+      <x>992</x>
       <y>936</y>
       <w>40</w>
       <h>88</h>
@@ -310,7 +310,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1376</x>
+      <x>1200</x>
       <y>1240</y>
       <w>88</w>
       <h>160</h>
@@ -321,7 +321,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1360</x>
+      <x>1184</x>
       <y>1384</y>
       <w>256</w>
       <h>168</h>
@@ -347,7 +347,7 @@ bg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>768</x>
+      <x>592</x>
       <y>1240</y>
       <w>168</w>
       <h>144</h>
@@ -358,7 +358,7 @@ bg=red
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>696</x>
+      <x>520</x>
       <y>1368</y>
       <w>208</w>
       <h>192</h>
@@ -385,7 +385,7 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1232</x>
+      <x>1056</x>
       <y>1240</y>
       <w>48</w>
       <h>144</h>
@@ -396,7 +396,7 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1136</x>
+      <x>960</x>
       <y>1368</y>
       <w>216</w>
       <h>192</h>
@@ -423,7 +423,7 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
+      <x>736</x>
       <y>1376</y>
       <w>216</w>
       <h>184</h>
@@ -449,7 +449,7 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1008</x>
+      <x>832</x>
       <y>1240</y>
       <w>40</w>
       <h>152</h>
@@ -460,7 +460,7 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
+      <x>424</x>
       <y>376</y>
       <w>392</w>
       <h>232</h>
@@ -489,7 +489,7 @@ bg=#585</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>984</x>
+      <x>808</x>
       <y>440</y>
       <w>104</w>
       <h>24</h>
@@ -500,67 +500,81 @@ bg=#585</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>232</x>
+      <x>56</x>
       <y>344</y>
       <w>344</w>
-      <h>256</h>
+      <h>216</h>
     </coordinates>
     <panel_attributes>Model :: Tree&lt;Type&gt;
 --
-
-- size : int
-- height : int
-- complete : bool
-- balanced : bool
+*Informatinoal Methods*
+- getSize : int
+- getHeight : int
+- isComplete : bool
+- isBalanced : bool
 --
-
-+ getSize() : int
-+ getHeight() : int
-+ isComplete() : bool
-+ isBalanced() : bool
-
-+ setSize(int size) : void
-+ setHeight(int height) : void
-+ setComplete(bool complete) : void
-+ setBalanced(bool balanced) : void
-
+*Traversals*
 /+ inOrderTraversal() : void/
 /+ preOrderTraversal() : void/
 /+ postOrderTraversal() : void/
+
+*Data operations*
+/+ insert(Type&gt; : void
+/+ contains(Type) : bool
+/+ remove(Type) : void
+
 bg=#5854</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>368</x>
+      <x>192</x>
       <y>648</y>
-      <w>344</w>
-      <h>256</h>
+      <w>360</w>
+      <h>424</h>
     </coordinates>
     <panel_attributes>Model :: BinarySearchTree&lt;Type&gt;
 --
 - root : BinarySearchTreeNode&lt;Type&gt; *
-- size : int (inherited)
-- height : int (inherited)
-- compelte : bool (inherited)
-- balanced : bool (inherited)
 --
-
 + getRoot() : BinarySearchTreeNode&lt;Type&gt; *
-+ setRootBinarySearchTreeNode&lt;Type&gt;* root) : void
++ setRoot(BinarySearchTreeNode&lt;Type&gt;* root) : void
 
-+ calculateSize(BinarySearchTreeNode&lt;Type&gt;*) : int
+*Recursive helper methods*
+# calculateSize(BinarySearchTreeNode&lt;Type&gt;*) : int
+# calculateHeight(BinarySearchTreeNode&lt;Type&gt; * root) : int
+# iscomplete(BinarySearchTreeNode&lt;Type&gt; *) : bool
+# isBalanced(BinarysearchTreeNode&lt;Type&gt; *) : bool
 
-+ inOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
-+ preOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
-+ postOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void</panel_attributes>
+# removeNode(BinarySerachTreeNode&lt;Type&gt; *)  : void
+
+# inOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
+# preOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
+# postOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
+
+*Informational*
++ getSize() : int
++ getHeight() : int
++ isBalanced() : bool
++ isComplete() : bool
+
+*Traversal*
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ postOrderTraverwsal() : void
+
+*Data operations*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
+      <x>464</x>
       <y>600</y>
       <w>104</w>
       <h>64</h>
@@ -571,13 +585,13 @@ bg=#5854</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>424</x>
-      <y>592</y>
+      <x>248</x>
+      <y>552</y>
       <w>40</w>
-      <h>72</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>
