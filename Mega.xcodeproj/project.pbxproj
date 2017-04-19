@@ -35,6 +35,7 @@
 		6717FF421E8BF0550011FDFB /* FileController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FileController.hpp; path = Mega/Controller/FileController.hpp; sourceTree = "<group>"; };
 		6717FF441E8BF45F0011FDFB /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Mega/Model/CrimeData.cpp; sourceTree = "<group>"; };
 		6717FF451E8BF45F0011FDFB /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Mega/Model/CrimeData.hpp; sourceTree = "<group>"; };
+		671B60361EA7B16200EB5AB9 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AVLTree.h; path = Mega/Model/AVLTree.h; sourceTree = "<group>"; };
 		6742540E1E54AAB2009E9002 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Mega/Model/Array.hpp; sourceTree = "<group>"; };
 		674254101E54B231009E9002 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Mega/Model/Timer.hpp; sourceTree = "<group>"; };
 		6771A8DD1E9D1F150042EF44 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinaryTreeNode.hpp; path = Mega/Model/BinaryTreeNode.hpp; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				67D577321EA4FC970072CCFC /* Tree.h */,
 				6771A8E11E9D25F10042EF44 /* BTree.h */,
 				6771A8E21E9D26010042EF44 /* BinarySearchTree.h */,
+				671B60361EA7B16200EB5AB9 /* AVLTree.h */,
 			);
 			name = Trees;
 			sourceTree = "<group>";
