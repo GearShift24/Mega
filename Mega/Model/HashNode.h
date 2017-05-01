@@ -49,7 +49,7 @@ long HashNode<Type> :: getKey() const
 }
 
 template <class Type>
-void HashNode<Type> :: setData()
+void HashNode<Type> :: setData(Type data)
 {
     this->data = data;
     
@@ -57,7 +57,7 @@ void HashNode<Type> :: setData()
 }
 
 template <class Type>
-Type HashNode<Type> :: setData()
+Type HashNode<Type> :: getData()
 {
     return this->data;
     
