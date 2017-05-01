@@ -51,6 +51,8 @@
 		67825BC81E69C8FF0085FE6C /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Mega/Model/CircularList.hpp; sourceTree = "<group>"; };
 		67825BC91E69C9220085FE6C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Mega/Model/Queue.hpp; sourceTree = "<group>"; };
 		67825BCA1E69C9630085FE6C /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Mega/Model/DoubleList.hpp; sourceTree = "<group>"; };
+		678D6A6C1EB77A8500B5C1A0 /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HashTable.h; path = Mega/Model/HashTable.h; sourceTree = "<group>"; };
+		678D6A6E1EB784D500B5C1A0 /* HashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HashNode.h; path = Mega/Model/HashNode.h; sourceTree = "<group>"; };
 		67D577321EA4FC970072CCFC /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Mega/Model/Tree.h; sourceTree = "<group>"; };
 		67EFB6BA1E51FCEE004183E4 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Mega/Controller/DataStructureController.cpp; sourceTree = "<group>"; };
 		67EFB6BB1E51FCEE004183E4 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Mega/Controller/DataStructureController.hpp; sourceTree = "<group>"; };
@@ -148,6 +150,15 @@
 			name = "old hpp";
 			sourceTree = "<group>";
 		};
+		678D6A6D1EB784C400B5C1A0 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				678D6A6C1EB77A8500B5C1A0 /* HashTable.h */,
+				678D6A6E1EB784D500B5C1A0 /* HashNode.h */,
+			);
+			name = HashTable;
+			sourceTree = "<group>";
+		};
 		67EFB6BF1E51FCF5004183E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +206,7 @@
 				677D1F0C1E672EB5009C9B02 /* Inherits from doublylinked */,
 				6717FF491E8BF4B60011FDFB /* Basic arrays and lists */,
 				677D1F0D1E672EC2009C9B02 /* old hpp */,
+				678D6A6D1EB784C400B5C1A0 /* HashTable */,
 			);
 			name = Model;
 			sourceTree = "<group>";
