@@ -36,7 +36,14 @@ public:
     void add(Type data);
     bool remove(Type data);
     void displayContents();
+    long getSize();
 };
+
+template <class Type>
+long HashTable<Type> :: getSize()
+{
+    return size;
+}
 
 template <class Type>
 HashTable<Type> :: HashTable()
