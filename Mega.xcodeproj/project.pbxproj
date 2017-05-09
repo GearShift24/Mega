@@ -48,6 +48,7 @@
 		677D1F061E671BED009C9B02 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Mega/Model/Timer.cpp; sourceTree = "<group>"; };
 		677D1F0A1E67286F009C9B02 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Mega/Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		677D1F0B1E672EAB009C9B02 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Mega/Model/Stack.hpp; sourceTree = "<group>"; };
+		6781A0CF1EC1FD5F001CD0E2 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Graph.h; path = Mega/Model/Graph.h; sourceTree = "<group>"; };
 		67825BC81E69C8FF0085FE6C /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Mega/Model/CircularList.hpp; sourceTree = "<group>"; };
 		67825BC91E69C9220085FE6C /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Mega/Model/Queue.hpp; sourceTree = "<group>"; };
 		67825BCA1E69C9630085FE6C /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Mega/Model/DoubleList.hpp; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 				6717FF491E8BF4B60011FDFB /* Basic arrays and lists */,
 				677D1F0D1E672EC2009C9B02 /* old hpp */,
 				678D6A6D1EB784C400B5C1A0 /* HashTable */,
+				6781A0CF1EC1FD5F001CD0E2 /* Graph.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
