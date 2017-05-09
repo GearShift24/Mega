@@ -41,5 +41,41 @@ public:
     
 };
 
+template <class Type>
+const int Graph<Type> :: MAXIMUM;
+
+template <class Type>
+Graph<Type> :: Graph()
+{
+    this->vertexCount = 0;
+}
+
+template <class Type>
+Graph<Type> :: ~Graph()
+{
+    delete [] this->adjacentMatrix;
+    delete [] this->graphData;
+}
+
+template <class Type>
+int Graph<Type> :: size() const
+{
+    return vertexCount;
+}
+
+template <class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    assert(size() < MAXIMUM);
+    int netVertexNumber = vertexCount;
+    
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
+    {
+        adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
+        [adjacencyMatrix[newVertexNumber] [otherVertexNumber] = false;
+    }
+         graphData[newVertexNumber = value;
+}
+
 
 #endif /* Graph_h */
