@@ -85,18 +85,18 @@ void BinarySearchTreeNode<Type> :: setRootPointer(BinarySearchTreeNode<Type>* ro
 {
     this->root = root;
 }
-
-template <class Type>
-void BinarySearchTreeNode<Type> :: setLeftChild(BinarySearchTreeNode<Type>* root)
-{
-    this->leftChild = leftChild;
-}
-
-template <class Type>
-void BinarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type>* root)
-{
-    this->rightChild = rightChild;
-}
+//
+//template <class Type>
+//void BinarySearchTreeNode<Type> :: setLeftChild(BinarySearchTreeNode<Type>* root)
+//{
+//    this->leftChild = leftChild;
+//}
+//
+//template <class Type>
+//void BinarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type>* root)
+//{
+//    this->rightChild = rightChild;
+//}
 
 
 

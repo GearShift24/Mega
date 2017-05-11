@@ -19,6 +19,7 @@
 #include "../Model/CircularList.hpp"
 #include "../Model/Meme.hpp"
 #include <string>
+#include "../Model/Graph.h"
 using namespace std;
 
 
@@ -26,19 +27,25 @@ class DataStructureController
 {
 private:
 
-    Array<int> numberArray;
+//    Array<int> numberArray;
+
+        Graph<string> JoJoGraph;
     
-    void testIntArray();
-    void testNodeTypes();
-    void testArrayTemplate();
-    void testListIntro();
-    void testAdvancedFeatures();
-    void testListTiming();
-    //meme testing
-    void testMemeQueue();
-    void testNumberStack();
-    //testing
-    void testBinarySearchTreeOperations();
+//    void testIntArray();
+//    void testNodeTypes();
+//    void testArrayTemplate();
+//    void testListIntro();
+//    void testAdvancedFeatures();
+//    void testListTiming();
+//    //meme testing
+//    void testMemeQueue();
+//    void testNumberStack();
+//    //testing
+//    void testBinarySearchTreeOperations();
+//
+    
+    //test JoJos
+    void testGraph();
     
 
 
