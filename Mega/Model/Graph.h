@@ -57,13 +57,14 @@ Graph<Type> :: ~Graph()
 //    delete [] this->graphData;
 }
 
+//gets how many things are in the graph
 template <class Type>
 int Graph<Type> :: size() const
 {
     return vertexCount;
 }
 
-
+//adds whatever Type to your vertex after checking that you have less than the max size of the graph
 template <class Type>
 void Graph<Type> :: addVertex(const Type& value)
 {
@@ -79,7 +80,7 @@ void Graph<Type> :: addVertex(const Type& value)
     vertexCount++;
 }
                    
-                   
+//checks if 2 of the same type of thing have an edge between each other
 template <class Type>
 bool Graph<Type> :: areConnected(int source, int target) const
   {
@@ -90,7 +91,9 @@ assert(source < size() && target < size());
                                                           
            return isAnEdge;
       }
-                  
+
+
+//these things check the graph
                                       
 template <class Type>
 Type& Graph<Type> :: operator[](int vertex)
@@ -105,7 +108,8 @@ template <class Type>
        assert(vertex < size());
        return graphData[vertex];
    }
-    
+
+
  template <class Type>
   std::set<int> Graph<Type> :: neighbors(int vertex) const
         {
@@ -122,7 +126,7 @@ template <class Type>
                         return vertexNeighbors;
         }
                         
-                      
+//adds connection between one vertex and another
     template<class Type>
   void Graph<Type> :: addEdge(int source, int target)
         {
@@ -131,14 +135,16 @@ template <class Type>
          }
                           
                           
-                          
+                        //takes away the conection between  one vertex and another
  template <class Type>
      void Graph<Type> :: removeEdge(int source, int target)
         {
            assert(source < size() && target < size());
            adjacencyMatrix[source ][target ] = false;
         }
-            
+
+
+//these two next ones go from oen side or another and look through the graph
   template <class Type>
      void Graph<Type> :: depthFirstTraversal(Graph<Type> currentGraph, int vertex)
         {
